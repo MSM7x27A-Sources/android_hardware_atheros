@@ -1,0 +1,1493 @@
+[    0.000000,0] Booting Linux on physical CPU 0
+[    0.000000,0] Initializing cgroup subsys cpu
+[    0.000000,0] Linux version 3.4.110-Chil360-MM-g80e5c78 (weritos@Weritos-Android) (gcc version 4.7.4 (crosstool-NG linaro-1.13.1+bzr2694 - Linaro GCC 2014.06) ) #14 SMP PREEMPT Tue Feb 23 00:12:08 YEKT 2016
+[    0.000000,0] CPU: ARMv7 Processor [410fc051] revision 1 (ARMv7), cr=10c5387d
+[    0.000000,0] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000,0] Machine: QRD MSM8625 QRD5
+[    0.000000,0] parse_tag_mem32: addr=0x200000, size=0x1fe00000
+[    0.000000,0] parse_tag_mem32: addr=0x20000000, size=0xcd00000
+[    0.000000,0] debug: ignoring loglevel setting.
+[    0.000000,0] meminfo.nr_banks = 2 
+[    0.000000,0] high_memory = 0x2cd00000 (virt: 0xecb00000) 
+[    0.000000,0] reserve_persist_ram: max_low = 0x2cd00000, max_high = 0x2cd00000 
+[    0.000000,0] reserve_persist_ram: needed size = 0x200000 
+[    0.000000,0] reserve persistent ram at 0x25000000 (size = 0x200000) 
+[    0.000000,0] msm8625_reserve: DDR size = 0x2cb00000 (715 MB)
+[    0.000000,0] MemBlock remove at 0x0fe00000, size: 0x8, ret = 0 
+[    0.000000,0] MemBlock remove at 0x0fc00000, size: 0x800, ret = 0 
+[    0.000000,0] MemBlock remove at 0x0fd00000, size: 0x20, ret = 0 
+[    0.000000,0] MemBlock remove at 0x00010000, size: 0xf0000, ret = 0 
+[    0.000000,0] MemBlock remove at 0x29f00000, size: 0x2e00000, ret = 0 
+[    0.000000,0] memory pool 3 (start 29f00000 size 2e00000) initialized
+[    0.000000,0] cma: CMA: reserved 60 MiB at 21400000
+[    0.000000,0] cma: CMA: reserved 36 MiB at 27800000
+[    0.000000,0] Memory policy: ECC disabled, Data cache writealloc
+[    0.000000,0] Initialized strongly ordered page successfully
+[    0.000000,0] smem_find(137, 80): wrong size 64
+[    0.000000,0] smem_find(137, 72): wrong size 64
+[    0.000000,0] socinfo_init: v4, id=127, ver=1.0, raw_id=1907, raw_ver=0, hw_plat=162, hw_plat_ver=131072
+[    0.000000,0] L310 cache controller enabled
+[    0.000000,0] l2x0: 8 ways, CACHE_ID 0x410054c8, AUX_CTRL 0x30d60000, Cache size: 524288 B
+[    0.000000,0] Prfetch Ctrl: 0x74800003
+[    0.000000,0] bootmem_init: min = 512, max_low = 0x2cd00, max_high = 0x2cd00 
+[    0.000000,0] On node 0 totalpages: 171261
+[    0.000000,0] free_area_init_node: node 0, pgdat c0a6a600, node_mem_map c13f3000
+[    0.000000,0]   Normal zone: 1430 pages used for memmap
+[    0.000000,0]   Normal zone: 0 pages reserved
+[    0.000000,0]   Normal zone: 169831 pages, LIFO batch:31
+[    0.000000,0] allocating 6270976 bytes at c1993000 (1b93000 physical) for fb
+[    0.000000,0] allocating 1244160 bytes at c1f8e000 (218e000 physical) for v4l2
+[    0.000000,0] PERCPU: Embedded 10 pages/cpu @c20c0000 s18048 r8192 d14720 u40960
+[    0.000000,0] pcpu-alloc: s18048 r8192 d14720 u40960 alloc=10*4096
+[    0.000000,0] pcpu-alloc: [0] 0 [0] 1 
+[    0.000000,0] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 169831
+[    0.000000,0] Kernel command line: androidboot.hardware=qcom androidboot.selinux=permissive user_debug=31 debug ignore_loglevel batt_cap=0,4300,3200 hack_lcd=1 chg_hack_lcd=0 pmemlog=3 reboot=2 pmemlog=3 reboot=2 androidboot.emmc=true androidboot.serialno=MSM8225QRD5 androidboot.baseband=msm androidboot.mode=normal ctpid=1
+[    0.000000,0] get TouchPanel_id = 1
+[    0.000000,0] PID hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000,0] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000,0] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000,0] Memory: 250MB 0MB 0MB 416MB = 668MB total
+[    0.000000,0] Memory: 554668k/554668k available, 177492k reserved, 0K highmem
+[    0.000000,0] Virtual kernel memory layout:
+[    0.000000,0]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000,0]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000,0]     vmalloc : 0xed000000 - 0xff000000   ( 288 MB)
+[    0.000000,0]     lowmem  : 0xc0000000 - 0xecb00000   ( 715 MB)
+[    0.000000,0]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000,0]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000,0]       .text : 0xc0008000 - 0xc0984218   (9713 kB)
+[    0.000000,0]       .init : 0xc0985000 - 0xc09cb680   ( 282 kB)
+[    0.000000,0]       .data : 0xc09cc000 - 0xc0a89e78   ( 760 kB)
+[    0.000000,0]        .bss : 0xc0a89e9c - 0xc0e4d994   (3855 kB)
+[    0.000000,0] SLUB: Genslabs=11, HWalign=64, Order=0-0, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000,0] Preemptible hierarchical RCU implementation.
+[    0.000000,0] NR_IRQS:645
+[    0.000000,0] sched_clock: 27 bits at 600kHz, resolution 1666ns, wraps every 223696ms
+[    0.000000,0] Console: colour dummy device 80x30
+[    0.000000,0] console [tty0] enabled
+[    0.002299,0] Calibrating delay loop... 398.13 BogoMIPS (lpj=1990656)
+[    0.060171,0] pid_max: default: 32768 minimum: 301
+[    0.060548,0] Security Framework initialized
+[    0.060616,0] SELinux:  Initializing.
+[    0.060788,0] SELinux:  Starting in permissive mode
+[    0.060953,0] Mount-cache hash table entries: 512
+[    0.062783,0] Initializing cgroup subsys cpuacct
+[    0.062839,0] Initializing cgroup subsys devices
+[    0.062886,0] Initializing cgroup subsys freezer
+[    0.062931,0] Initializing cgroup subsys bfqio
+[    0.062974,0] Initializing cgroup subsys timer_slack
+[    0.063063,0] CPU: Testing write buffer coherency: ok
+[    0.063366,0] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.063478,0] hw perfevents: enabled with ARMv7 Cortex-A5 PMU driver, 3 counters available
+[    0.063661,0] Setting up static identity map for 0x883c48 - 0x883cac
+[    0.065529,1] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.065626,0] Brought up 2 CPUs
+[    0.065709,0] SMP: Total of 2 processors activated (796.26 BogoMIPS).
+[    0.081098,0] do_initcall_level: early parameters 
+[    0.082746,0] do_initcall_level: core parameters 
+[    0.084303,0] VFP support v0.3: implementor 41 architecture 2 part 30 variant 5 rev 1
+[    0.085466,0] dummy: 
+[    0.092941,0] NET: Registered protocol family 16
+[    0.093074,0] do_initcall_level: postcore parameters 
+[    0.097196,0] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.098168,0] gpiochip_add: registered GPIOs 0 to 15 on device: generic
+[    0.098343,0] gpiochip_add: registered GPIOs 16 to 42 on device: generic
+[    0.098496,0] gpiochip_add: registered GPIOs 43 to 67 on device: generic
+[    0.098658,0] gpiochip_add: registered GPIOs 68 to 94 on device: generic
+[    0.098808,0] gpiochip_add: registered GPIOs 95 to 106 on device: generic
+[    0.098976,0] gpiochip_add: registered GPIOs 107 to 132 on device: generic
+[    0.099489,0] do_initcall_level: arch parameters 
+[    0.101118,0] Shared PLL control available.
+[    0.104358,0] acpuclk_7627_probe()
+[    0.104449,0] Dynamic reprogramming is ON
+[    0.105496,0] ACPU running at 600000 KHz
+[    0.105551,0] Id CPU-KHz PLL DIV AHB-KHz ADIV AXI-KHz D0 D1 D2 D4 U0 U1 U2 U4
+[    0.105636,0]  0   19200   5   1    2400    4   30720 -1 -1 -1 -1  3  1  4 -1
+[    0.105719,0]  1  245760   1   1   30720    4   61440 -1 -1 -1 -1  3 -1  4  5
+[    0.105803,0]  2  320000   0   3   40000    4  122880 -1  1 -1 -1  3 -1  4  5
+[    0.105886,0]  3  480000   0   2   60000    4  122880  2  1 -1 -1 -1 -1  4  6
+[    0.105968,0]  4  600000   2   2   75000    4  160000  2  1 -1 -1 -1 -1 -1  7
+[    0.106051,0]  5  700800   4   1   87500    4  160000  2  1  4 -1 -1 -1 -1  7
+[    0.106134,0]  6 1008000   4   1  126000    4  200000  3 -1  4  5 -1 -1 -1  7
+[    0.106218,0]  7 1152000   4   1  151200    4  200000 -1 -1  4  5 -1 -1 -1 -1
+[    0.106291,0] CPU0: 6 scaling frequencies supported.
+[    0.106346,0] CPU1: 6 scaling frequencies supported.
+[    0.106734,0] smps1: 1100 mV normal 
+[    0.107086,0] smps2: 1100 mV normal 
+[    0.107414,0] smps3: 1800 mV normal 
+[    0.107743,0] smps4: 2100 mV normal 
+[    0.108061,0] ldo01: 1800 <--> 2100 mV normal 
+[    0.108388,0] ldo02: 2850 mV normal 
+[    0.108718,0] ldo03: 1200 mV normal 
+[    0.109051,0] ldo04: 1100 mV normal 
+[    0.109374,0] ldo05: 1300 <--> 1350 mV normal 
+[    0.109706,0] ldo06: 1200 mV normal 
+[    0.110036,0] ldo07: 2600 mV normal 
+[    0.110429,0] ldo08: 2850 mV normal 
+[    0.110756,0] ldo09: 1800 mV normal 
+[    0.111104,0] ldo10: 1800 <--> 3000 mV normal 
+[    0.111444,0] ldo11: 1800 mV normal 
+[    0.111781,0] ldo12: 2850 mV normal 
+[    0.112114,0] ldo13: 2850 mV normal 
+[    0.112444,0] ldo14: 3300 mV normal 
+[    0.112774,0] ldo15: 1800 <--> 2850 mV normal 
+[    0.113124,0] ldo16: 1800 <--> 2850 mV normal 
+[    0.113474,0] ldo17: 2850 <--> 3300 mV normal 
+[    0.113811,0] ldo18: 2700 mV normal 
+[    0.114181,0] ldo19: 1200 <--> 1800 mV normal 
+[    0.114521,0] ncp: 1800 mV normal 
+[    0.116003,0] ext_2p85v: 
+[    0.116239,0] gpio_vreg_probe: id=35, name=ext_2p85v, gpio=35, gpio_label=ext_2p85v_en
+[    0.116583,0] ext_1p8v: 
+[    0.116801,0] gpio_vreg_probe: id=40, name=ext_1p8v, gpio=40, gpio_label=ext_1p8v_en
+[    0.117143,0] ext_3p3v: 
+[    0.117334,0] gpio_vreg_probe: id=12, name=ext_3p3v, gpio=12, gpio_label=ext_3p3v_en
+[    0.119423,0] msm_read_nv: MAC from NV: 00:00:00:00:C0:03
+[    0.119626,0] smps3: Failed to create debugfs directory
+[    0.120263,0] smps3: Failed to create debugfs directory
+[    0.121816,0] platform bt_power.0: msm7627a_bt_power_init: set regulator bt min level to 3300000
+[    0.121923,0] i2c_register_board_info LTR558
+[    0.121974,0] i2c_register_board_info_mma8452
+[    0.122024,0] i2c_register_board_info YAMAHA SENSORS.
+[    0.122331,0] gpio_request: gpio-18 (gc0339) status -16
+[    0.122391,0] i6_camera_gpio_cfg: gpio_request---GPIO_SKU1_CAM_VGA_SHDN failed!
+[    0.122528,0] gpio_request: gpio-29 (gc0339) status -16
+[    0.122594,0] i6_camera_gpio_cfg: gpio_request---GPIO_SKU1_CAM_VGA_RESET_N failed!
+[    0.123281,0] qrd7627a_add_io_devices: tp_id=1
+[    0.123918,0] hw-breakpoint: found 2 (+1 reserved) breakpoint and 1 watchpoint registers.
+[    0.124011,0] hw-breakpoint: maximum watchpoint size is 4 bytes.
+[    0.126266,0] qup_i2c qup_i2c.0: No src_clk_rate specified in platfrom data
+[    0.126356,0] qup_i2c qup_i2c.0: Using default clock rate 19200000Hz
+[    0.126528,0] qup_i2c qup_i2c.0: clk_set_rate(core_clk, 19200000Hz):-22
+[    0.127728,0] qup_i2c qup_i2c.1: No src_clk_rate specified in platfrom data
+[    0.127809,0] qup_i2c qup_i2c.1: Using default clock rate 19200000Hz
+[    0.127959,0] qup_i2c qup_i2c.1: clk_set_rate(core_clk, 19200000Hz):-22
+[    0.128243,0] linxc gsbi1_quptable_i2c_gpio_config  adap_id=1, config_type=1
+[    0.129023,0] i2c i2c-1: Failed to register i2c client accelerometer at 0x38 (-16)
+[    0.129124,0] i2c i2c-1: Can't create device at 0x38
+[    0.129488,0] do_initcall_level: subsys parameters 
+[    0.131694,0] fs_gfx3d: normal 
+[    0.155566,0] bio: create slab <bio-0> at 0
+[    0.156498,0] qup_i2c qup_i2c.0: QUP: I2C status flags :0x1363c8, irq:66
+[    0.156609,0] qup_i2c qup_i2c.0: I2C slave addr:0x22 not connected
+[    0.156696,0] sx150x 0-0022: i2c write fail: can't write 01 to 10: -107
+[    0.156781,0] sx150x: probe of 0-0022 failed with error -107
+[    0.157353,0] ION heap vmalloc created
+[    0.157426,0] ION heap camera_preview created at 0 with size 3c00000
+[    0.157533,0] ION heap audio created at 29f00000 with size 3a000
+[    0.157679,0] ION heap sf created at 29f3a000 with size 2d00000
+[    0.157766,0] ION heap bl_mem_audio created at 10000 with size f0000
+[    0.158384,0] SCSI subsystem initialized
+[    0.158821,0] usbcore: registered new interface driver usbfs
+[    0.159009,0] usbcore: registered new interface driver hub
+[    0.159271,0] usbcore: registered new device driver usb
+[    0.159571,0] Linux media interface: v0.10
+[    0.159711,0] Linux video capture interface: v2.00
+[    0.160179,0] Advanced Linux Sound Architecture Driver Version 1.0.25.
+[    0.161133,0] Bluetooth: Core ver 2.16
+[    0.161256,0] NET: Registered protocol family 31
+[    0.161309,0] Bluetooth: HCI device and connection manager initialized
+[    0.161381,0] Bluetooth: HCI socket layer initialized
+[    0.161438,0] Bluetooth: L2CAP socket layer initialized
+[    0.161763,0] Bluetooth: SCO socket layer initialized
+[    0.162018,0] do_initcall_level: fs parameters 
+[    0.163623,0] Switching to clocksource dg_timer
+[    0.165738,1] Switched to NOHz mode on CPU #1
+[    0.170571,0] Switched to NOHz mode on CPU #0
+[    0.204383,0] NET: Registered protocol family 2
+[    0.223111,0] IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.224139,0] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.227778,0] TCP bind hash table entries: 65536 (order: 7, 524288 bytes)
+[    0.229774,0] TCP: Hash tables configured (established 131072 bind 65536)
+[    0.229863,0] TCP: reno registered
+[    0.229934,0] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    0.230071,0] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    0.230786,0] NET: Registered protocol family 1
+[    0.231319,0] Unpacking initramfs...
+[    0.330151,0] Freeing initrd memory: 952K
+[    0.330231,0] do_initcall_level: device parameters 
+[    0.337356,0] Notify: smsm init
+[    0.337659,1] get_nand_partitions: no flash partition table in shared memory
+[    0.343058,0] rpcrouter_smd_remote_notify: smd opened 0x  (null)
+[    0.343481,1] [adsp.c:adsp_init] msm_adsp -- 0
+[    0.346344,0] [audpp.c:audpp_probe] Number of decoder supported 5
+[    0.346421,1] rpcrouter: Server create rejected, version = 0, program = 3000003b
+[    0.346549,0] [audpp.c:audpp_probe] Number of concurrency supported 8
+[    0.346663,0] [audpp.c:audpp_probe] module_name:AUDPLAY0TASK
+[    0.346739,0] [audpp.c:audpp_probe] queueid:13
+[    0.346829,0] [audpp.c:audpp_probe] decid:0
+[    0.346894,0] [audpp.c:audpp_probe] nr_codec_support:11
+[    0.346954,0] [audpp.c:audpp_probe] module_name:AUDPLAY1TASK
+[    0.347061,0] [audpp.c:audpp_probe] queueid:14
+[    0.347118,0] [audpp.c:audpp_probe] decid:1
+[    0.347208,0] [audpp.c:audpp_probe] nr_codec_support:11
+[    0.347279,0] [audpp.c:audpp_probe] module_name:AUDPLAY2TASK
+[    0.347378,0] [audpp.c:audpp_probe] queueid:15
+[    0.347443,0] [audpp.c:audpp_probe] decid:2
+[    0.347528,0] [audpp.c:audpp_probe] nr_codec_support:11
+[    0.347589,0] [audpp.c:audpp_probe] module_name:AUDPLAY3TASK
+[    0.347676,0] [audpp.c:audpp_probe] queueid:16
+[    0.347733,0] [audpp.c:audpp_probe] decid:3
+[    0.347818,0] [audpp.c:audpp_probe] nr_codec_support:11
+[    0.347879,0] [audpp.c:audpp_probe] module_name:AUDPLAY4TASK
+[    0.347941,0] [audpp.c:audpp_probe] queueid:17
+[    0.348014,0] [audpp.c:audpp_probe] decid:4
+[    0.348068,0] [audpp.c:audpp_probe] nr_codec_support:1
+[    0.351383,0] dma_test_init, minor number 100
+[    0.351453,0] WLAN power init
+[    0.353468,0] audit: initializing netlink socket (disabled)
+[    0.353504,1] __msm_rpc_connect: server not found 30000002:20001
+[    0.353906,0] type=2000 audit(0.360:1): initialized
+[    0.356939,1] rmt_storage_get_ramfs: RAMFS entry: addr = 0x2cec0000, size = 0x00300000
+[    0.357048,1] rmt_storage_get_ramfs: RAMFS entry: addr = 0x2cdc0000, size = 0x00100000
+[    0.357453,1] rmt_storage_probe: Remote storage RPC client (0x300000a7)initialized
+[    0.601889,0] fuse init (API version 7.18)
+[    0.602831,0] yaffs: yaffs built Feb 22 2016 23:08:22 Installing.
+[    0.602981,0] msgmni has been set to 1277
+[    0.603091,0] SELinux:  Registering netfilter hooks
+[    0.606104,0] io scheduler bfq registered (default)
+[    0.606171,0] BFQ I/O-scheduler: v7r8
+[    0.606253,0] io scheduler cfq registered
+[    0.606314,0] io scheduler deadline registered
+[    0.606384,0] io scheduler fiops registered
+[    0.606443,0] io scheduler noop registered
+[    0.606493,0] io scheduler row registered
+[    0.606541,0] io scheduler sio registered
+[    0.606591,0] io scheduler sioplus registered
+[    0.606643,0] io scheduler vr registered
+[    0.606691,0] io scheduler zen registered
+[    0.608921,0] mipi_dsi base phy_addr = 0xa1100000 virt = 0xed300000
+[    0.609033,0] linxc: msm_fb_dsi_client_I6_reset 
+[    0.609258,0] msm_fb_detect_panel: name = "mipi_video_novatek_sharp_qhd"
+[    0.609333,0] msm_fb_detect_panel: name = "mipi_cmd_novatek_sharp_qhd"
+[    0.609403,0] msm_fb_detect_panel: name = "mipi_video_novatek_nt35516_qhd"
+[    0.609473,0] msm_fb_detect_panel: name = "mipi_cmd_novatek_nt35516_qhd"
+[    0.609541,0] I6_mipi_panel_is_novatek_nt35516
+[    0.609678,0] I6_mipi_panel_is_novatek_nt35516: is_nt35516 = 1
+[    0.609743,0] I6 LCD is cmd novatek nt35516
+[    0.609794,0] mipi_novatek_nt35516_qhd_device_register
+[    0.609936,0] mipi_novatek_nt35516_qhd_lcd_probe
+[    0.610301,0] mipi_novatek_nt35516_qhd_lcd_probe
+[    0.610364,0] setting pdata->panel_info.fb_num to 3. type: 9
+[    0.610653,0] DSI_TWO_LANES
+[    0.623584,0] FrameBuffer[0] 540x960 size=6266880 bytes is registered successfully!
+[    0.624238,0] Registered led device: lcd-backlight
+[    0.624691,0] msm_serial: detected port #0
+[    0.624861,0] msm_serial.0: ttyMSM0 at MMIO 0xa9a00000 (irq = 41) is a MSM
+[    0.625498,0] msm_serial: driver initialized
+[    0.625679,0] --BT msm_hs_probe wakeup irq check: 301
+[    0.626719,0] msm_serial_hs.0: ttyHS0 at MMIO 0xa0200000 (irq = 77) is a MSM HS UART
+[    0.627158,0] msm_serial_hs module loaded
+[    0.629228,0] diagchar initialized now
+[    0.633826,0] kgsl kgsl-3d0: |kgsl_gpummu_init| MMU type set for device is GPUMMU
+[    0.641548,0] loop: module loaded
+[    0.642473,0] zram: Created 1 device(s) ...
+[    0.854749,0] SCSI Media Changer driver v0.25 
+[    0.856109,0] msm_nand_probe: phys addr 0xa0a00000 
+[    0.856179,0] msm_nand_probe: Dual Nand Ctrl in ping-pong mode
+[    0.856251,0] msm_nand_probe: dmac 0x7
+[    0.856773,0] msm_nand_probe: allocated dma buffer at e7646000, dma_addr 27846000
+[    0.856968,0] flash_onfi_probe: No partition info available
+[    0.857106,0] status: 20
+[    0.857149,0] nandid: 20202020 maker 20 device 20
+[    0.857209,0] ERROR: unknown nand device manuf=20 devid=20
+[    0.857296,0] SFLASHC Async Mode bit: 0 
+[    0.857389,0] =================================================================
+[    0.857473,0] flash_onenand_probe: manufacturer_id = 0xf000
+[    0.857533,0] flash_onenand_probe: device_id = 0xf001
+[    0.857588,0] flash_onenand_probe: version_id = 0xf002
+[    0.857644,0] flash_onenand_probe: data_buf_size = 0xf003
+[    0.857703,0] flash_onenand_probe: boot_buf_size = 0xf004
+[    0.857761,0] flash_onenand_probe: num_of_buffers = 0xf005
+[    0.857821,0] flash_onenand_probe: technology = 0xf006
+[    0.857876,0] =================================================================
+[    0.857954,0] flash_onenand_probe: Detected an unsupported device
+[    0.858018,0] msm_nand_probe: No nand device found
+[    0.858283,0] tun: Universal TUN/TAP device driver, 1.6
+[    0.858344,0] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    0.858594,0] rmnet_init: SMD devices[8]
+[    0.866238,0] PPP generic driver version 2.4.2
+[    0.866496,0] PPP BSD Compression module registered
+[    0.866563,0] PPP Deflate Compression module registered
+[    0.867761,0] PPP MPPE Compression module registered
+[    0.867838,0] NET: Registered protocol family 24
+[    0.868079,0] msm_hsusb_rpc_connect: rpc connect success vers = 10001
+[    0.868896,0] __msm_rpc_connect: server not found 3000001a:40001
+[    0.868971,0] __msm_rpc_connect: server not found 3000001a:30001
+[    0.869039,0] __msm_rpc_connect: server not found 3000001a:20001
+[    0.869114,0] msm_chg_rpc_connect: connected to rpc vers = 10001
+[    0.869439,0] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.869693,0] msm_hsusb_rpc_connect: usb_ep already connected
+[    0.869761,0] host driver registered w/ tranceiver
+[    0.870058,0] usbcore: registered new interface driver cdc_acm
+[    0.870124,0] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    0.870209,0] Initializing USB Mass Storage driver...
+[    0.870364,0] usbcore: registered new interface driver usb-storage
+[    0.870431,0] USB Mass Storage support registered.
+[    0.870578,0] usbcore: registered new interface driver ums-alauda
+[    0.870716,0] usbcore: registered new interface driver ums-cypress
+[    0.870849,0] usbcore: registered new interface driver ums-datafab
+[    0.870984,0] usbcore: registered new interface driver ums-freecom
+[    0.871108,0] usbcore: registered new interface driver ums-isd200
+[    0.871241,0] usbcore: registered new interface driver ums-jumpshot
+[    0.871374,0] usbcore: registered new interface driver ums-karma
+[    0.871501,0] usbcore: registered new interface driver ums-onetouch
+[    0.871638,0] usbcore: registered new interface driver ums-sddr09
+[    0.871771,0] usbcore: registered new interface driver ums-sddr55
+[    0.871904,0] usbcore: registered new interface driver ums-usbat
+[    0.872063,0] usbcore: registered new interface driver usb_ehset_test
+[    0.873588,0] peripheral driver registered w/ tranceiver
+[    0.874878,0] mbim_init: initialize 1 instances
+[    0.875088,0] mbim_init: Initialized 1 ports
+[    0.877868,0] android_usb gadget: Mass Storage Function, version: 2009/09/11
+[    0.877951,0] android_usb gadget: Number of LUNs=2
+[    0.878011,0]  lun0: LUN: removable file: (no medium)
+[    0.878071,0]  lun1: LUN: read only CD-ROM file: (no medium)
+[    0.878441,0] android_usb gadget: android_usb ready
+[    0.878976,0] [elan] elan_ktf2k_ts_init: driver version 0x0003: Integrated 2 and 5 fingers together and auto-mapping resolution
+[    0.879148,0] lcd_elan_ktf2k_power_onoff: on = 1
+[    0.879253,0] lcd_elan_ktf2k_power_onoff: 'ext_2v8' regulator not found, rc=-517
+[    1.103986,0] msm_otg_suspend: usb in low power mode
+[    1.534639,0] [elan]__hello_packet_handler: hello packet 55:55:55:55:ff:FF:ff:ff
+[    1.534724,0] [elan] hellopacket's rc = 0
+[    1.628641,0] [elan] __fw_packet_handler: firmware version: 0x0020
+[    1.628714,0] [elan] __fw_packet_handler: firmware ID: 0x1190
+[    1.628778,0] [elan] __fw_packet_handler: x resolution: 640, y resolution: 1280
+[    1.628856,0] [elan] elan_ktf2k_ts_setup: firmware checking done.
+[    1.628928,0] [ELAN] RESOLUTION: 640 x 1280 
+[    1.629358,0] input: elan-touchscreen as /devices/virtual/input/input0
+[    1.629836,0] [ELAN] misc_register finished!!
+[    1.629891,0] [ELAN] misc_register finished!!
+[    1.629951,0] [ELAN] FW_ID=0x1190, New_FW_ID=0x1190 
+[    1.630006,0] [ELAN] FW_VERSION=0x20, New_FW_VER=0x20 
+[    1.630069,0] [ELAN] start iap update end
+[    1.630123,0] lcd_elan_ktf2k_power_onoff: on = 0
+[    1.630208,0] lcd_elan_ktf2k_power_onoff: 'ext_2v8' regulator not found, rc=-517
+[    1.630288,0] [ELAN] elan_ktf2k_ts_probe: end!
+[    1.630464,0] gpio_request: gpio-26 (ft5306 RST GPIO) status -16
+[    1.630543,0] ft5306_ts_platform_init Failed to request GPIO 26
+[    1.673909,0] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1363c8, irq:75
+[    1.674014,0] qup_i2c qup_i2c.1: I2C slave addr:0x38 not connected
+[    1.674089,0] ft5306_i2c_read_value:i2c_transfer failed!
+[    1.674148,0] Read chip id failed!Maybe have not connected device!
+[    1.674583,0] GPIO Matrix Keypad Driver: Start keypad matrix for 7x27a_kp in interrupt mode
+[    1.675024,0] input: 7x27a_kp as /devices/virtual/input/input1
+[    1.777171,0] input: mma8452 as /devices/virtual/input/input2
+[    1.777614,0] ltr558_probe: int gpio is 17, irq is 273
+[    2.389838,0] input: ltr558 as /devices/virtual/input/input3
+[    2.390079,0] ltr558_probe: succeed
+[    2.390246,0] i2c-core: driver [accelerometer] using legacy suspend method
+[    2.390329,0] i2c-core: driver [accelerometer] using legacy resume method
+[    2.390749,0] input: geomagnetic as /devices/platform/qup_i2c.1/i2c-1/1-002e/input/input4
+[    2.391331,0] input: geomagnetic_raw as /devices/platform/qup_i2c.1/i2c-1/1-002e/input/input5
+[    2.391591,0] yas_term
+[    2.391633,0] yas_term_nolock
+[    2.391673,0] yas_init
+[    2.391708,0] yas_init_nolock IN
+[    2.391759,0] yas_init_nolock OUT
+[    2.391801,0] yas_set_position
+[    2.391844,0] yas_set_position[7] OUT
+[    2.391888,0] yas_get_offset
+[    2.391928,0] yas_get_offset[0] OUT
+[    2.391971,0] yas_get_delay
+[    2.392011,0] yas_get_delay[200] OUT
+[    2.392054,0] yas_set_filter_enable IN
+[    2.392101,0] yas_set_filter_enable OUT
+[    2.392146,0] yas_get_filter
+[    2.392186,0] yas_get_filter[0] OUT
+[    2.392228,0] yas_get_static_matrix
+[    2.392273,0] yas_get_static_matrix[0] OUT
+[    2.392319,0] yas_get_dynamic_matrix
+[    2.392364,0] yas_get_dynamic_matrix[0] OUT
+[    2.392461,0] i2c-core: driver [geomagnetic] using legacy suspend method
+[    2.392531,0] i2c-core: driver [geomagnetic] using legacy resume method
+[    2.393246,0] input: orientation as /devices/virtual/input/input6
+[    2.393533,0] [sensor_input_info_init] ++
+[    2.393823,0] [sensor_input_info_init] --
+[    2.396506,1] RPC CALL -- TOD TIME UPDATE: ttick = 308426
+[    2.396531,1] stamp=59791442318491648, freq = 1970626397
+[    2.396653,1] drivers/rtc/hctosys.c: unable to open rtc device (rtc0)
+[    2.397904,1] using rtc device, msm_rtc, for alarms
+[    2.398004,1] rs30000048 rs30000048.262144: rtc core: registered msm_rtc as rtc0
+[    2.398888,1] rs30000048 rs30000048.262144: rtc core: registered msm_rtc_secure as rtc1
+[    2.399044,1] i2c /dev entries driver
+[    2.400691,1] 
+[    2.400703,1]  in ov8825_truly_cm8313_sensor_i2c_probe
+[    2.400786,1] ov8825_truly_cm8313_sensor_power_up IN
+[    2.400844,1] ov8825_truly_cm8313_sensor_power_up, sensor_pwd:5, sensor_reset:6
+[    2.494534,0] msm_sensor_i2c_probe: the name for project menu is "ov8825_truly_cm8313"
+[    2.494849,0] msm_eeprom_probe: FAIL! (eeprom_info = NULL)
+[    2.495409,0] msm_sensor_register mctl_node_name[0] = video1
+[    2.495486,0] ov8825_truly_cm8313_sensor_power_down IN
+[    2.603918,0] ov5647_sensor_i2c_probe IN
+[    2.603981,0] ov5647_sensor_power_up IN
+[    2.604031,0] ov5647_sensor_power_up, sensor_pwd:5, sensor_reset:6
+[    2.663889,0] qup_i2c qup_i2c.0: QUP: I2C status flags :0x1363c8, irq:66
+[    2.663998,0] qup_i2c qup_i2c.0: I2C slave addr:0x36 not connected
+[    2.664074,0] msm_sensor_match_id: ov5647: read id failed
+[    2.664138,0] msm_sensor_i2c_probe ov5647_i2c_probe failed
+[    2.664196,0] ov5647_sensor_power_down IN
+[    2.664366,0] qup_i2c qup_i2c.0: QUP: I2C status flags :0x1363c8, irq:66
+[    2.664469,0] qup_i2c qup_i2c.0: I2C slave addr:0x36 not connected
+[    2.713888,0] qup_i2c qup_i2c.0: QUP: I2C status flags :0x1363c8, irq:66
+[    2.713991,0] qup_i2c qup_i2c.0: I2C slave addr:0x36 not connected
+[    2.714064,0] ov5647_sensor_power_down: -107
+[    2.714236,0] qup_i2c qup_i2c.0: QUP: I2C status flags :0x1363c8, irq:66
+[    2.714338,0] qup_i2c qup_i2c.0: I2C slave addr:0x36 not connected
+[    2.813804,0] camera_af_software_powerdown IN...
+[    2.813864,0] SKUA AF Motor software powerdown, write i2c saddr:0x18, waddr:0x80, wdata:0x00
+[    2.814076,0] qup_i2c qup_i2c.0: QUP: I2C status flags :0x1363c8, irq:66
+[    2.814181,0] qup_i2c qup_i2c.0: I2C slave addr:0xc not connected
+[    2.814253,0] AF software powerdown faild
+[    2.829436,0] ov5647: probe of 0-006c failed with error -107
+[    2.829623,0] gc0339_sensor_i2c_probe IN
+[    2.829676,0] gc0339_sensor_power_up IN
+[    2.829726,0] gc0339_sensor_power_up, sensor_pwd:18, sensor_reset:29
+[    2.883886,0] qup_i2c qup_i2c.0: QUP: I2C status flags :0x1363c8, irq:66
+[    2.883989,0] qup_i2c qup_i2c.0: I2C slave addr:0x21 not connected
+[    2.884063,0] gc0339 sensor read id
+[    2.884229,0] qup_i2c qup_i2c.0: QUP: I2C status flags :0x1363c8, irq:66
+[    2.884329,0] qup_i2c qup_i2c.0: I2C slave addr:0x21 not connected
+[    2.884403,0] gc0339 readid 0xc8 : 0x0
+[    2.884451,0] gc0339_sensor_match_id: read id failed
+[    2.884506,0] msm_sensor_i2c_probe gc0339_i2c_probe failed
+[    2.884564,0] gc0339_sensor_power_down IN
+[    2.998916,0] gc0339: probe of 0-0036 failed with error -107
+[    3.104383,0] msm_sensor_i2c_probe: the name for project menu is "ov2675"
+[    3.104476,0] msm_eeprom_probe: FAIL! (eeprom_info = NULL)
+[    3.105041,0] msm_sensor_register mctl_node_name[1] = video3
+[    3.140591,0] I2C radio driver for Qualcomm FM Radio Transceiver , Version 1.0.0
+[    3.141221,0] msm_batt_init: enter
+[    3.142103,0] msm_batt_get_charger_api_version: num_of_chg_api_versions = 1. The chg api version = 0x1ca4d7e6
+[    3.142238,0] __msm_rpc_connect: server not found 30000089:40001
+[    3.142316,0] __msm_rpc_connect: server not found 30000089:10001
+[    3.142389,0] __msm_rpc_connect: server not found 30000089:20001
+[    3.143224,0] msm_batt_probe: batt_cap_type = 0, batt_v_max = 4300, batt_v_min = 3200, batt_v_fs = 3200 
+[    3.144993,1] msm_batt_enable_filter: enable vbatt filter: OK
+[    3.145064,1] msm_batt_update_psy_status: enter
+[    3.145664,1] BATT: rcvd: 3(2), 0(2), 5(0), 2(0x6d580 [0%]); 3533, 250; (0, 0, 0)
+[    3.145754,1] BATT: No charger present
+[    3.145804,1] BATT: No charging.
+[    3.145849,1] BATT: Battery good.
+[    3.145893,1] BATT: Battery -> discharging
+[    3.145948,1] BATT: voltage = 3533 mV [capacity = 30%]
+[    3.146006,1] BATT: Supply = battery
+[    3.146191,1] msm_batt_update_psy_status: exit
+[    3.146394,1] msm_batt_init: Charger/Battery = 0x00010001/0x00050001 (RPC version)
+[    3.146481,1] msm_batt_init: Real Charger = 0x1ca4d7e6 (RPC version)
+[    3.147831,1] msm_adc successfully registered
+[    3.147894,1] msm_adc successfully registered
+[    3.149144,1] device-mapper: ioctl: 4.22.0-ioctl (2011-10-19) initialised: dm-devel@redhat.com
+[    3.149263,1] Bluetooth: HCI UART driver ver 2.2
+[    3.149321,1] Bluetooth: HCI H4 protocol initialized
+[    3.149376,1] Bluetooth: HCILL protocol initialized
+[    3.149429,1] Bluetooth: HCI_IBS protocol initialized
+[    3.149484,1] Bluetooth: MSM Sleep Mode Driver Ver 1.1
+[    3.152183,1] [imoseyon] ondemandX enter
+[    3.152988,1] [imoseyon] brazilianwax enter
+[    3.154878,1] [imoseyon] superbad enter
+[    3.156639,1] mmc0: SDCC Version: 0x00000000
+[    3.156869,1] mmc0: No card detect facilities available
+[    3.158296,1] mmc0: Qualcomm MSM SDCC-core at 0x00000000a0600000 irq 80,0 dma 8 dmacrcri 12
+[    3.158398,1] mmc0: Controller capabilities: 0x00000001
+[    3.158458,1] mmc0: 8 bit data mode enabled
+[    3.158508,1] mmc0: 4 bit data mode disabled
+[    3.158559,1] mmc0: polling status mode disabled
+[    3.158616,1] mmc0: MMC clock 144000 -> 49152000 Hz, PCLK 80000000 Hz
+[    3.158683,1] mmc0: Slot eject status = 0
+[    3.158736,1] mmc0: Power save feature enable = 1
+[    3.158793,1] mmc0: DM non-cached buffer at e7660000, dma_addr 0x27860000
+[    3.158864,1] mmc0: DM cmd busaddr 0x27860000, cmdptr busaddr 0x27877f40
+[    3.159878,1] mmc1: SDCC Version: 0x00000000
+[    3.160098,1] mmc1: No card detect facilities available
+[    3.161544,1] mmc1: Qualcomm MSM SDCC-core at 0x00000000a0400000 irq 56,0 dma 10 dmacrcri 6
+[    3.161641,1] mmc1: Controller capabilities: 0x00000001
+[    3.161698,1] mmc1: 8 bit data mode disabled
+[    3.161748,1] mmc1: 4 bit data mode enabled
+[    3.161796,1] mmc1: polling status mode disabled
+[    3.161853,1] mmc1: MMC clock 144000 -> 49152000 Hz, PCLK 80000000 Hz
+[    3.161919,1] mmc1: Slot eject status = 0
+[    3.161968,1] mmc1: Power save feature enable = 1
+[    3.162024,1] mmc1: DM non-cached buffer at e76c0000, dma_addr 0x278c0000
+[    3.162096,1] mmc1: DM cmd busaddr 0x278c0000, cmdptr busaddr 0x278d7f40
+[    3.163124,1] mmc2: SDCC Version: 0x00000000
+[    3.163433,1] mmc2: No card detect facilities available
+[    3.165001,1] mmc2: Qualcomm MSM SDCC-core at 0x00000000a0500000 irq 58,0 dma 7 dmacrcri 7
+[    3.165094,1] mmc2: Controller capabilities: 0x00000001
+[    3.165151,1] mmc2: 8 bit data mode disabled
+[    3.165201,1] mmc2: 4 bit data mode enabled
+[    3.165251,1] mmc2: polling status mode disabled
+[    3.165306,1] mmc2: MMC clock 144000 -> 49152000 Hz, PCLK 80000000 Hz
+[    3.165373,1] mmc2: Slot eject status = 0
+[    3.165421,1] mmc2: Power save feature enable = 1
+[    3.165478,1] mmc2: DM non-cached buffer at e76e0000, dma_addr 0x278e0000
+[    3.165549,1] mmc2: DM cmd busaddr 0x278e0000, cmdptr busaddr 0x278f7f40
+[    3.166029,1] Registered led device: button-backlight
+[    3.166496,1] tricolor_leds_backlight_init: module init
+[    3.166638,1] tricolor leds and flashlight: probe init 
+[    3.166831,1] Registered led device: red
+[    3.166998,1] Registered led device: green
+[    3.167159,1] Registered led device: blue
+[    3.167328,1] Registered led device: flashlight
+[    3.168329,1] usbcore: registered new interface driver usbhid
+[    3.168396,1] usbhid: USB HID core driver
+[    3.169393,1] ashmem: initialized
+[    3.169568,1] logger: created 256K log 'log_main'
+[    3.169743,1] logger: created 256K log 'log_events'
+[    3.169928,1] logger: created 256K log 'log_radio'
+[    3.170118,1] logger: created 256K log 'log_system'
+[    3.171136,1] msm-codec-dai msm-codec-dai.0: asoc_msm_codec_probe: dev name msm-codec-dai.0
+[    3.172464,1] msm_soc: ALSA MSM Mixer Setting
+[    3.173634,1] asoc: msm-codec-dai <-> msm-cpu-dai.0 mapping ok
+[    3.175308,1] oprofile: using arm/armv7
+[    3.175556,1] Netfilter messages via NETLINK v0.30.
+[    3.175709,1] nf_conntrack version 0.5.0 (10217 buckets, 40868 max)
+[    3.176781,1] ctnetlink v0.93: registering with nfnetlink.
+[    3.176916,1] NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+[    3.176989,1] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+[    3.177386,1] xt_time: kernel timezone is -0000
+[    3.177771,1] IPv4 over IPv4 tunneling driver
+[    3.179154,1] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    3.179661,1] arp_tables: (C) 2002 David S. Miller
+[    3.179833,1] TCP: cubic registered
+[    3.179883,1] TCP: westwood registered
+[    3.179929,1] TCP: vegas registered
+[    3.179974,1] TCP: veno registered
+[    3.180018,1] Initializing XFRM netlink socket
+[    3.181174,1] NET: Registered protocol family 10
+[    3.184531,1] Mobile IPv6
+[    3.184641,1] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    3.185099,1] IPv6 over IPv4 tunneling driver
+[    3.187199,1] NET: Registered protocol family 17
+[    3.187318,1] NET: Registered protocol family 15
+[    3.187711,1] Bluetooth: RFCOMM TTY layer initialized
+[    3.187796,1] Bluetooth: RFCOMM socket layer initialized
+[    3.187856,1] Bluetooth: RFCOMM ver 1.11
+[    3.187906,1] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    3.187964,1] Bluetooth: BNEP filters: protocol multicast
+[    3.188024,1] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    3.188268,1] L2TP core driver, V2.0
+[    3.188351,1] PPPoL2TP kernel driver, V2.0
+[    3.188403,1] L2TP IP encapsulation support (L2TPv3)
+[    3.188773,1] L2TP netlink interface
+[    3.188859,1] L2TP ethernet pseudowire support (L2TPv3)
+[    3.188974,1] L2TP debugfs support
+[    3.189028,1] do_initcall_level: late parameters 
+[    3.190639,1] ThumbEE CPU extension supported.
+[    3.190704,1] Registering SWP/SWPB emulation handler
+[    3.194991,1] clock_late_init: Removing enables held for handed-off clocks
+[    3.196921,1] cpufreq: cpu0 init at 600000 switching to 480000
+[    3.199443,1] input: 7k_handset as /devices/virtual/input/input7
+[    3.204044,0] bricked_hotplug: msm_mpdec_init init complete.
+[    3.204878,0] mako_hotplug: init
+[    3.205156,0] [zen_decision]: platform_driver_register succeeded
+[    3.205661,0] [zen_decision]: power supply 'battery' found
+[    3.205743,0] [zen_decision]: driver initialized successfully 
+[    3.205829,0] [zen_decision]: platform_device_register succeeded
+[    3.206381,0] msm-sleeper version 4.0
+[    3.206559,0] msm_sleeper: Device init
+[    3.206634,0] intelli_plug: version 4.0 by faux123
+[    3.206716,0] elan-touchscreen found and connected!
+[    3.208811,0] rs30000048 rs30000048.262144: setting system clock to 2016-02-25 10:28:32 UTC (1456396112)
+[    3.209866,0] ALSA device list:
+[    3.209931,0]   #0: msm-audio
+[    3.211216,0] Freeing init memory: 280K
+[    3.215529,1] init: init started!
+[    3.229959,1] SELinux: 2048 avtab hash slots, 5036 rules.
+[    3.233914,0] Division by zero in kernel.
+[    3.234063,0] [<c0015c6c>] (unwind_backtrace+0x0/0x11c) from [<c06746f4>] (dump_stack+0x18/0x1c)
+[    3.234208,0] [<c06746f4>] (dump_stack+0x18/0x1c) from [<c001348c>] (__div0+0x18/0x20)
+[    3.234354,0] [<c001348c>] (__div0+0x18/0x20) from [<c02af298>] (Ldiv0+0x8/0x10)
+[    3.234486,0] [<c02af298>] (Ldiv0+0x8/0x10) from [<c02af268>] (__aeabi_uidivmod+0x8/0x18)
+[    3.234634,0] [<c02af268>] (__aeabi_uidivmod+0x8/0x18) from [<c04a85d4>] (do_dbs_timer+0x330/0x384)
+[    3.234791,0] [<c04a85d4>] (do_dbs_timer+0x330/0x384) from [<c00bbb20>] (process_one_work+0x250/0x43c)
+[    3.234939,0] [<c00bbb20>] (process_one_work+0x250/0x43c) from [<c00bbed4>] (worker_thread+0x194/0x2c0)
+[    3.235088,0] [<c00bbed4>] (worker_thread+0x194/0x2c0) from [<c00c1388>] (kthread+0x94/0xa4)
+[    3.235244,0] [<c00c1388>] (kthread+0x94/0xa4) from [<c0010164>] (kernel_thread_exit+0x0/0x8)
+[    3.238404,1] SELinux: 2048 avtab hash slots, 5036 rules.
+[    3.238521,1] SELinux:  1 users, 2 roles, 547 types, 0 bools, 1 sens, 1024 cats
+[    3.238638,1] SELinux:  87 classes, 5036 rules
+[    3.244076,1] SELinux:  Completing initialization.
+[    3.244164,1] SELinux:  Setting up existing superblocks.
+[    3.244284,1] SELinux: initialized (dev sysfs, type sysfs), uses genfs_contexts
+[    3.244418,1] SELinux: initialized (dev rootfs, type rootfs), uses genfs_contexts
+[    3.244629,1] SELinux: initialized (dev bdev, type bdev), not configured for labeling
+[    3.244768,1] SELinux: initialized (dev proc, type proc), uses genfs_contexts
+[    3.244911,1] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+[    3.245064,1] SELinux: initialized (dev debugfs, type debugfs), uses genfs_contexts
+[    3.252096,0] mmc0: new high speed MMC card at address 0001
+[    3.252659,1] SELinux: initialized (dev sockfs, type sockfs), uses task SIDs
+[    3.252806,1] SELinux: initialized (dev pipefs, type pipefs), uses task SIDs
+[    3.252941,1] SELinux: initialized (dev anon_inodefs, type anon_inodefs), not configured for labeling
+[    3.253083,1] SELinux: initialized (dev devpts, type devpts), uses transition SIDs
+[    3.253258,1] SELinux: initialized (dev selinuxfs, type selinuxfs), uses genfs_contexts
+[    3.253513,0] mmcblk0: mmc0:0001 SEM04G 3.68 GiB 
+[    3.253666,1] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+[    3.253923,1] SELinux: initialized (dev sysfs, type sysfs), uses genfs_contexts
+[    3.257239,0]  mmcblk0: p1 p2 p3 p4 < p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 >
+[    3.343528,0] mmc1: host does not support reading read-only switch. assuming write-enable.
+[    3.348858,0] mmc1: new high speed SDHC card at address b368
+[    3.349963,0] mmcblk1: mmc1:b368 NCard 14.8 GiB 
+[    3.352278,0]  mmcblk1: p1
+[    3.378133,1] type=1403 audit(1456396112.660:2): policy loaded auid=4294967295 ses=4294967295
+[    3.379594,1] init: (Initializing SELinux non-enforcing took 0.16s.)
+[    3.397119,0] type=1400 audit(1456396112.680:3): avc:  denied  { module_request } for  pid=1 comm="init" kmod="personality-8" scontext=u:r:init:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[    3.399313,0] init: init second stage started!
+[    3.505121,0] init: waitpid failed: No child processes
+[    3.506038,0] init: (Loading properties from /default.prop took 0.00s.)
+[    3.511268,0] init: (Parsing /init.environ.rc took 0.00s.)
+[    3.512219,0] init: (Parsing /init.usb.rc took 0.00s.)
+[    3.515153,0] init: (Parsing init.target.rc took 0.00s.)
+[    3.516134,0] init: (Parsing init.qcom.usb.rc took 0.00s.)
+[    3.516263,0] init: (Parsing /init.qcom.rc took 0.00s.)
+[    3.517601,0] init: (Parsing /init.usb.configfs.rc took 0.00s.)
+[    3.517911,0] init: (Parsing /init.zygote32.rc took 0.00s.)
+[    3.518296,0] init: (Parsing /init.trace.rc took 0.00s.)
+[    3.519731,0] init: (Parsing /init.superuser.rc took 0.00s.)
+[    3.519863,0] init: (Parsing /init.cm.rc took 0.00s.)
+[    3.519974,0] init: (Parsing /init.rc took 0.01s.)
+[    3.520506,0] init: SELinux: Could not get canonical path /adb_keys restorecon: No such file or directory.
+[    3.520811,0] init: Starting service 'ueventd'...
+[    3.525136,0] type=1400 audit(1456396112.810:4): avc:  denied  { module_request } for  pid=133 comm="ueventd" kmod="personality-8" scontext=u:r:ueventd:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[    3.527271,0] ueventd: ueventd started!
+[    3.534109,0] init: Waiting for /dev/.coldboot_done...
+[    4.358908,0] ueventd: Coldboot took 0.81s.
+[    4.367763,0] init: Waiting for /dev/.coldboot_done took 0.83s.
+[    4.368046,0] init: /dev/hw_random not found
+[    4.368259,0] init: could not open /dev/keychord: No such file or directory
+[    4.384101,0] SELinux: initialized (dev cgroup, type cgroup), uses genfs_contexts
+[    4.385518,0] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+[    4.390023,0] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+[    4.399974,0] init: write_file: Unable to open '/proc/sys/kernel/sched_tunable_scaling': No such file or directory
+[    4.400233,0] init: write_file: Unable to open '/proc/sys/kernel/sched_latency_ns': No such file or directory
+[    4.400474,0] init: write_file: Unable to open '/proc/sys/kernel/sched_wakeup_granularity_ns': No such file or directory
+[    4.400704,0] init: write_file: Unable to open '/proc/sys/kernel/sched_compat_yield': No such file or directory
+[    4.402311,0] init: write_file: Unable to open '/proc/sys/net/ipv4/fwmark_reflect': No such file or directory
+[    4.402609,0] init: write_file: Unable to open '/proc/sys/net/ipv6/fwmark_reflect': No such file or directory
+[    4.402853,0] init: write_file: Unable to open '/proc/sys/net/ipv4/tcp_fwmark_accept': No such file or directory
+[    4.434063,0] SELinux: initialized (dev cgroup, type cgroup), uses genfs_contexts
+[    4.434671,0] init: write_file: Unable to write to '/dev/cpuctl/cpu.shares': Invalid argument
+[    4.443034,0] init: write_file: Unable to open '/proc/sys/abi/swp': No such file or directory
+[    4.444423,0] type=1400 audit(1456396113.720:5): avc:  denied  { create } for  pid=1 comm="init" name="sdcard" scontext=u:r:init:s0 tcontext=u:object_r:tmpfs:s0 tclass=lnk_file permissive=1
+[    4.454251,0] SELinux: initialized (dev cgroup, type cgroup), uses genfs_contexts
+[    4.456031,0] init: /dev/hw_random not found
+[    4.471433,0] EXT4-fs (mmcblk0p15): Ignoring removed nomblk_io_submit option
+[    4.504918,0] EXT4-fs (mmcblk0p15): recovery complete
+[    4.506268,0] EXT4-fs (mmcblk0p15): mounted filesystem with ordered data mode. Opts: nomblk_io_submit,errors=remount-ro
+[    4.506466,0] SELinux: initialized (dev mmcblk0p15, type ext4), uses xattr
+[    4.506829,0] fs_mgr: check_fs(): mount(/dev/block/mmcblk0p15,/cache,ext4)=0: Success
+[    4.533909,0] fs_mgr: check_fs(): unmount(/cache) succeeded
+[    4.534113,0] fs_mgr: Not running /system/bin/e2fsck on /dev/block/mmcblk0p15 (executable not in system image)
+[    4.544638,0] EXT4-fs (mmcblk0p15): mounted filesystem with ordered data mode. Opts: barrier=1
+[    4.544806,0] SELinux: initialized (dev mmcblk0p15, type ext4), uses xattr
+[    4.545043,0] fs_mgr: __mount(source=/dev/block/mmcblk0p15,target=/cache,type=ext4)=0
+[    4.555329,0] EXT4-fs (mmcblk0p14): mounted filesystem with ordered data mode. Opts: barrier=1
+[    4.555483,0] SELinux: initialized (dev mmcblk0p14, type ext4), uses xattr
+[    4.555674,0] fs_mgr: __mount(source=/dev/block/mmcblk0p14,target=/persist,type=ext4)=0
+[    4.565836,0] EXT4-fs (mmcblk0p12): mounted filesystem with ordered data mode. Opts: barrier=1
+[    4.566003,0] SELinux: initialized (dev mmcblk0p12, type ext4), uses xattr
+[    4.566261,0] fs_mgr: __mount(source=/dev/block/mmcblk0p12,target=/system,type=ext4)=0
+[    4.583181,0] EXT4-fs (mmcblk0p13): Ignoring removed nomblk_io_submit option
+[    4.593349,0] EXT4-fs (mmcblk0p13): mounted filesystem with ordered data mode. Opts: nomblk_io_submit,errors=remount-ro
+[    4.593538,0] SELinux: initialized (dev mmcblk0p13, type ext4), uses xattr
+[    4.593884,0] fs_mgr: check_fs(): mount(/dev/block/mmcblk0p13,/data,ext4)=0: Success
+[    4.623898,0] fs_mgr: check_fs(): unmount(/data) succeeded
+[    4.630468,0] fs_mgr: Running /system/bin/e2fsck on /dev/block/mmcblk0p13
+[    4.648299,0] type=1400 audit(1456396113.920:6): avc:  denied  { module_request } for  pid=150 comm="e2fsck" kmod="personality-8" scontext=u:r:fsck:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[    4.778309,0] type=1400 audit(1456396114.050:7): avc:  denied  { read } for  pid=150 comm="e2fsck" name="mmcblk0p13" dev="tmpfs" ino=4162 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    4.778639,0] type=1400 audit(1456396114.050:8): avc:  denied  { open } for  pid=150 comm="e2fsck" name="mmcblk0p13" dev="tmpfs" ino=4162 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    4.779108,0] type=1400 audit(1456396114.050:9): avc:  denied  { write } for  pid=150 comm="e2fsck" name="mmcblk0p13" dev="tmpfs" ino=4162 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    4.779518,0] type=1400 audit(1456396114.050:10): avc:  denied  { ioctl } for  pid=150 comm="e2fsck" path="/dev/block/mmcblk0p13" dev="tmpfs" ino=4162 ioctlcmd=127c scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    4.815136,0] e2fsck: e2fsck 1.42.9 (28-Dec-2013)
+[    4.815166,0] 
+[    4.815354,0] e2fsck: /dev/block/mmcblk0p13: clean, 8192/161600 files, 344716/645884 blocks
+[    4.815399,0] 
+[    4.834519,0] EXT4-fs (mmcblk0p13): mounted filesystem with ordered data mode. Opts: noauto_da_alloc,barrier=1
+[    4.834709,0] SELinux: initialized (dev mmcblk0p13, type ext4), uses xattr
+[    4.834988,0] fs_mgr: __mount(source=/dev/block/mmcblk0p13,target=/data,type=ext4)=0
+[    4.839321,0] zram0: detected capacity change from 0 to 536870912
+[    4.850531,0] type=1400 audit(1456396114.120:11): avc:  denied  { module_request } for  pid=155 comm="mkswap" kmod="personality-8" scontext=u:r:toolbox:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[    4.911578,0] type=1400 audit(1456396114.180:12): avc:  denied  { read write } for  pid=155 comm="mkswap" name="zram0" dev="tmpfs" ino=2979 scontext=u:r:toolbox:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    4.911914,0] type=1400 audit(1456396114.180:13): avc:  denied  { open } for  pid=155 comm="mkswap" name="zram0" dev="tmpfs" ino=2979 scontext=u:r:toolbox:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    4.913723,0] random: mkswap urandom read with 15 bits of entropy available
+[    4.935934,0] type=1400 audit(1456396114.210:14): avc:  denied  { write } for  pid=1 comm="init" name="zram0" dev="tmpfs" ino=2979 scontext=u:r:init:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    4.936588,0] Adding 524284k swap on /dev/block/zram0.  Priority:-1 extents:1 across:524284k SS
+[    4.941129,0] init: Starting service 'logd'...
+[    4.967883,0] type=1400 audit(1456396114.240:15): avc:  denied  { module_request } for  pid=158 comm="logd" kmod="personality-8" scontext=u:r:logd:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[    5.006208,0] init: property_set("ro.config.low_ram", "true") failed
+[    5.039979,0] init: (Loading properties from /system/build.prop took 0.08s.)
+[    5.040311,0] init: (Loading properties from /vendor/build.prop took 0.00s.)
+[    5.040506,0] init: (Loading properties from /factory/factory.prop took 0.00s.)
+[    5.057321,0] init: Starting service 'vold'...
+[    5.061686,0] init: Not bootcharting.
+[    5.103351,0] type=1400 audit(1456396114.370:16): avc:  denied  { module_request } for  pid=161 comm="vold" kmod="personality-8" scontext=u:r:vold:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[    5.150578,0] logd.auditd: start
+[    6.154169,0] type=1400 audit(1456396115.420:17): avc: denied { module_request } for pid=173 comm="sgdisk" kmod="personality-8" scontext=u:r:sgdisk:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[    6.455683,0] init: Starting service 'exec 0 (/system/bin/tzdatacheck)'...
+[    6.468024,0] type=1400 audit(1456396115.740:18): avc: denied { module_request } for pid=178 comm="tzdatacheck" kmod="personality-8" scontext=u:r:tzdatacheck:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[    6.555016,0] init: Service 'exec 0 (/system/bin/tzdatacheck)' (pid 178) exited with status 0
+[    6.566071,0] msm_batt_update_psy_status: enter
+[    6.567124,0] BATT: same event count = 1 (2, 2, 0) 3533 mV, 0%, 250, (0, 0, 0)
+[    6.568394,0] init: Starting service 'sysinit'...
+[    6.569728,0] init: (Loading properties from /data/local.prop took 0.00s.)
+[    6.582246,0] type=1400 audit(1456396115.850:19): avc: denied { module_request } for pid=181 comm="sysinit" kmod="personality-8" scontext=u:r:sysinit:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[    6.617929,0] init: Starting service 'logd-reinit'...
+[    6.639049,0] init: Starting service 'healthd'...
+[    6.641133,0] init: Starting service 'lmkd'...
+[    6.643114,0] init: Starting service 'servicemanager'...
+[    6.649109,0] type=1400 audit(1456396115.920:20): avc: denied { module_request } for pid=185 comm="healthd" kmod="personality-8" scontext=u:r:healthd:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[    6.681079,0] init: Starting service 'surfaceflinger'...
+[    6.683058,0] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[    6.683219,0] init: Starting service 'rmt_oeminfo'...
+[    6.695901,0] init: Warning!  Service rmt_storage needs a SELinux domain defined; please fix!
+[    6.696071,0] init: Starting service 'rmt_storage'...
+[    6.702023,0] init: write_file: Unable to open '/proc/sys/net/ipv6/conf/rmnet_sdio0/accept_ra': No such file or directory
+[    6.702299,0] init: write_file: Unable to open '/proc/sys/net/ipv6/conf/rmnet_sdio1/accept_ra': No such file or directory
+[    6.702554,0] init: write_file: Unable to open '/proc/sys/net/ipv6/conf/rmnet_sdio2/accept_ra': No such file or directory
+[    6.702801,0] init: write_file: Unable to open '/proc/sys/net/ipv6/conf/rmnet_sdio3/accept_ra': No such file or directory
+[    6.703053,0] init: write_file: Unable to open '/proc/sys/net/ipv6/conf/rmnet_sdio4/accept_ra': No such file or directory
+[    6.703298,0] init: write_file: Unable to open '/proc/sys/net/ipv6/conf/rmnet_sdio5/accept_ra': No such file or directory
+[    6.703548,0] init: write_file: Unable to open '/proc/sys/net/ipv6/conf/rmnet_sdio6/accept_ra': No such file or directory
+[    6.733834,1] Switched to NOHz mode on CPU #1
+[    6.756496,0] init: write_file: Unable to open '/proc/sys/net/ipv6/conf/rmnet_sdio7/accept_ra': No such file or directory
+[    6.796008,0] init: write_file: Unable to open '/sys/devices/system/cpu/cpufreq/ondemand/sampling_rate': No such file or directory
+[    6.796369,0] init: write_file: Unable to open '/sys/devices/system/cpu/cpufreq/ondemand/up_threshold': No such file or directory
+[    6.797043,0] lowmemorykiller: lowmem_shrink: convert oom_adj to oom_score_adj:
+[    6.797154,0] lowmemorykiller: oom_adj 0 => oom_score_adj 0
+[    6.797233,0] lowmemorykiller: oom_adj 1 => oom_score_adj 58
+[    6.797311,0] lowmemorykiller: oom_adj 2 => oom_score_adj 117
+[    6.797388,0] lowmemorykiller: oom_adj 4 => oom_score_adj 235
+[    6.797466,0] lowmemorykiller: oom_adj 9 => oom_score_adj 529
+[    6.797544,0] lowmemorykiller: oom_adj 12 => oom_score_adj 705
+[    6.904554,0] init: Starting service 'console'...
+[    6.906923,0] init: Starting service 'adbd'...
+[    6.909488,0] init: Starting service 'netd'...
+[    6.911586,0] init: Starting service 'debuggerd'...
+[    6.912969,0] init: cannot find '/system/bin/debuggerd64', disabling 'debuggerd64'
+[    6.926904,1] rmt_storage (200): /proc/200/oom_adj is deprecated, please use /proc/200/oom_score_adj instead.
+[    6.940436,0] type=1400 audit(1456396115.950:21): avc: denied { module_request } for pid=187 comm="servicemanager" kmod="personality-8" scontext=u:r:servicemanager:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[    6.941934,0] type=1400 audit(1456396115.960:22): avc: denied { module_request } for pid=186 comm="lmkd" kmod="personality-8" scontext=u:r:lmkd:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[    6.943271,0] type=1400 audit(1456396115.960:23): avc: denied { execute_no_trans } for pid=193 comm="init" path="/system/bin/rmt_oeminfo" dev="mmcblk0p12" ino=15671 scontext=u:r:init:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[    6.955074,0] init: Starting service 'ril-daemon'...
+[    6.960548,0] init: Starting service 'drm'...
+[    6.962803,0] init: Starting service 'media'...
+[    6.975519,0] adb_open
+[    6.990201,0] init: Starting service 'installd'...
+[    6.992538,0] init: Starting service 'keystore'...
+[    7.010411,0] init: Starting service 'ril-daemon2'...
+[    7.012566,0] init: Warning!  Service hwmac needs a SELinux domain defined; please fix!
+[    7.067554,0] init: Starting service 'hwmac'...
+[    7.070411,0] init: Warning!  Service netmgrd needs a SELinux domain defined; please fix!
+[    7.070586,0] init: Starting service 'netmgrd'...
+[    7.072726,0] init: Warning!  Service oem_rpc_svc needs a SELinux domain defined; please fix!
+[    7.072901,0] init: Starting service 'oem_rpc_svc'...
+[    7.105134,0] init: Warning!  Service qmuxd needs a SELinux domain defined; please fix!
+[    7.119668,0] init: Starting service 'qmuxd'...
+[    7.122308,0] init: Warning!  Service sensord needs a SELinux domain defined; please fix!
+[    7.122496,0] init: Starting service 'sensord'...
+[    7.186961,0] init: Warning!  Service orientationd needs a SELinux domain defined; please fix!
+[    7.187138,0] init: Starting service 'orientationd'...
+[    7.189221,0] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[    7.189394,0] init: Starting service 'geomagneticd'...
+[    7.191648,0] init: Warning!  Service wlan_detect needs a SELinux domain defined; please fix!
+[    7.191839,0] init: Starting service 'wlan_detect'...
+[    7.281714,0] init: Warning!  Service gps_check needs a SELinux domain defined; please fix!
+[    7.282089,0] init: Starting service 'gps_check'...
+[    7.316518,0] init: Starting service 'zygote'...
+[    7.338088,0] init: Service 'logd-reinit' (pid 184) exited with status 194
+[    7.338991,0] init: Service 'rmt_oeminfo' (pid 193) exited with status 255
+[    7.339143,0] init: Service 'rmt_oeminfo' (pid 193) killing any children in process group
+[    7.340198,0] init: Service 'geomagneticd' (pid 267) exited with status 1
+[    7.340384,0] init: Service 'geomagneticd' (pid 267) killing any children in process group
+[    7.342309,0] init: Starting service 'gatekeeperd'...
+[    7.473563,0] init: Starting service 'perfprofd'...
+[    7.476256,0] init: Warning!  Service qcamerasvr needs a SELinux domain defined; please fix!
+[    7.476446,0] init: Starting service 'qcamerasvr'...
+[    7.478626,0] init: Warning!  Service thermald needs a SELinux domain defined; please fix!
+[    7.478796,0] init: Starting service 'thermald'...
+[    7.480961,0] init: Warning!  Service gpu_dcvsd needs a SELinux domain defined; please fix!
+[    7.481126,0] init: Starting service 'gpu_dcvsd'...
+[    7.483053,0] init: Starting service 'su_daemon'...
+[    7.594781,0] init: Service 'su_daemon' is being killed...
+[    7.595958,0] enable_store: android_usb: already disabled
+[    7.596854,0] mtp_bind_config
+[    7.597021,0] adb_bind_config
+[    7.654656,0] init: Service 'su_daemon' (pid 293) killed by signal 9
+[    7.654859,0] init: Service 'su_daemon' (pid 293) killing any children in process group
+[    7.655738,0] init: Starting service 'su_daemon'...
+[    7.681708,0] healthd: wakealarm_init: timerfd_create failed
+[    7.954374,0] init: Service 'sensord' (pid 258) exited with status 251
+[    8.131369,0] init: Service 'hwmac' (pid 247) exited with status 0
+[    8.183878,0] logd.daemon: reinit
+[    8.421149,0] warning: `rild' uses 32-bit capabilities (legacy support in use)
+[    8.425998,1] init: Service 'gps_check' (pid 276) exited with status 0
+[    8.601861,0] smd_pkt_open: DATA8_CNTL open failed -19
+[    8.604929,0] smd_pkt_open: DATA9_CNTL open failed -19
+[    8.607631,0] smd_pkt_open: DATA12_CNTL open failed -19
+[    8.610923,0] smd_pkt_open: DATA13_CNTL open failed -19
+[    8.613469,0] smd_pkt_open: DATA14_CNTL open failed -19
+[    8.892764,1] Calling CRDA to update world regulatory domain
+[    9.099653,0] smd_pkt_open: DATA8_CNTL open failed -19
+[    9.102291,0] smd_pkt_open: DATA9_CNTL open failed -19
+[    9.109673,0] smd_pkt_open: DATA12_CNTL open failed -19
+[    9.112766,0] smd_pkt_open: DATA13_CNTL open failed -19
+[    9.115873,0] smd_pkt_open: DATA14_CNTL open failed -19
+[    9.260401,0] smd_pkt_open: DATA8_CNTL open failed -19
+[    9.265076,0] smd_pkt_open: DATA9_CNTL open failed -19
+[    9.281593,0] smd_pkt_open: DATA12_CNTL open failed -19
+[    9.296026,0] smd_pkt_open: DATA13_CNTL open failed -19
+[    9.299929,0] smd_pkt_open: DATA14_CNTL open failed -19
+[    9.739841,1] MDP: unknown ioctl (cmd=c06c6d94) received!
+[    9.790388,0] type=1400 audit(1456396115.970:24): avc: denied { module_request } for pid=192 comm="surfaceflinger" kmod="personality-8" scontext=u:r:surfaceflinger:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[    9.859209,1] init: Starting service 'bootanim'...
+[    9.883898,1] pmapp_rpc_req_reply: successfully connected to 0x70001 rpc version
+[    9.885006,1] gpio_request: gpio-135 (gpio_disp_pwr) status -22
+[    9.885046,1] failed to request gpio_disp_pwr
+[    9.888431,1] mipi_novatek_nt35516_qhd_lcd_on: E
+[    9.893173,1] init: Service 'sysinit' (pid 181) exited with status 0
+[    9.935416,0] random: nonblocking pool is initialized
+[    9.954251,1] type=1400 audit(1456396115.980:25): avc: denied { module_request } for pid=193 comm="rmt_oeminfo" kmod="personality-8" scontext=u:r:init:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   10.014543,1] type=1400 audit(1456396116.030:26): avc: denied { execmod } for pid=193 comm="rmt_oeminfo" path="/system/bin/rmt_oeminfo" dev="mmcblk0p12" ino=15671 scontext=u:r:init:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   10.015333,1] type=1400 audit(1456396116.190:27): avc: denied { module_request } for pid=212 comm="sh" kmod="personality-8" scontext=u:r:shell:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   10.016641,1] type=1400 audit(1456396116.200:28): avc: denied { module_request } for pid=216 comm="debuggerd" kmod="personality-8" scontext=u:r:debuggerd:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   10.017861,1] type=1400 audit(1456396116.230:29): avc: denied { module_request } for pid=213 comm="adbd" kmod="personality-8" scontext=u:r:adbd:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   10.019063,1] type=1400 audit(1456396116.240:30): avc: denied { module_request } for pid=215 comm="netd" kmod="personality-8" scontext=u:r:netd:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   10.020283,1] type=1400 audit(1456396116.250:31): avc: denied { module_request } for pid=225 comm="drmserver" kmod="personality-8" scontext=u:r:drmserver:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   10.021496,1] type=1400 audit(1456396116.310:32): avc: denied { module_request } for pid=233 comm="installd" kmod="personality-8" scontext=u:r:installd:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   10.022669,1] type=1400 audit(1456396116.340:33): avc: denied { module_request } for pid=234 comm="keystore" kmod="personality-8" scontext=u:r:keystore:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   10.974729,0] type=1400 audit(1456396116.350:34): avc: denied { create } for pid=238 comm="init" name="rild-debug2" scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[   10.976299,0] type=1400 audit(1456396116.350:35): avc: denied { setattr } for pid=238 comm="init" name="rild-debug2" dev="tmpfs" ino=4541 scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[   10.977018,0] type=1400 audit(1456396116.420:36): avc: denied { module_request } for pid=254 comm="getprop" kmod="personality-8" scontext=u:r:shell:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   10.977944,0] type=1400 audit(1456396116.670:37): avc: denied { module_request } for pid=281 comm="gatekeeperd" kmod="personality-8" scontext=u:r:gatekeeperd:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   10.979416,0] type=1400 audit(1456396116.690:38): avc: denied { module_request } for pid=280 comm="app_process" kmod="personality-8" scontext=u:r:zygote:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   10.980761,0] type=1400 audit(1456396116.740:39): avc: denied { module_request } for pid=286 comm="log" kmod="personality-8" scontext=u:r:sysinit:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   10.981691,0] type=1400 audit(1456396116.820:40): avc: denied { module_request } for pid=289 comm="perfprofd" kmod="personality-8" scontext=u:r:perfprofd:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   10.983068,0] type=1400 audit(1456396116.970:41): avc: denied { execmod } for pid=290 comm="mm-qcamera-daem" path="/system/bin/mm-qcamera-daemon" dev="mmcblk0p12" ino=15639 scontext=u:r:init:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   11.551296,0] msm_batt_update_psy_status: enter
+[   11.552661,0] BATT: same event count = 2 (2, 2, 0) 3533 mV, 0%, 250, (0, 0, 0)
+[   11.818769,1] msm_fb_pan_display_sub:Don't refresh the first frame to LCD
+[   11.821473,1] type=1400 audit(1456396117.080:42): avc: denied { append } for pid=258 comm="sensord" name="sensord.err" dev="mmcblk0p13" ino=145482 scontext=u:r:init:s0 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1
+[   11.822513,1] type=1400 audit(1456396117.180:43): avc: denied { ioctl } for pid=266 comm="orientationd" path="/dev/input/event5" dev="tmpfs" ino=3064 ioctlcmd=4506 scontext=u:r:init:s0 tcontext=u:object_r:input_device:s0 tclass=chr_file permissive=1
+[   11.824148,1] type=1400 audit(1456396117.690:44): avc: denied { write } for pid=266 comm="orientationd" name="event5" dev="tmpfs" ino=3064 scontext=u:r:init:s0 tcontext=u:object_r:input_device:s0 tclass=chr_file permissive=1
+[   11.894863,1] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   11.895023,1] init: Starting service 'rmt_oeminfo'...
+[   11.896799,1] type=1400 audit(1456396117.690:45): avc: denied { write } for pid=292 comm="gpu_dcvsd" name="kgsl-3d0" dev="tmpfs" ino=4190 scontext=u:r:init:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[   11.898079,1] type=1400 audit(1456396117.690:46): avc: denied { write } for pid=290 comm="mm-qcamera-daem" name="video100" dev="tmpfs" ino=3072 scontext=u:r:init:s0 tcontext=u:object_r:video_device:s0 tclass=chr_file permissive=1
+[   11.898771,1] type=1400 audit(1456396117.700:47): avc: denied { write } for pid=269 comm="wlan_detect" name="property_service" dev="tmpfs" ino=2803 scontext=u:r:init:s0 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=1
+[   11.899969,1] type=1400 audit(1456396117.700:48): avc: denied { read } for pid=269 comm="wlan_detect" name="ar6000.ko" dev="mmcblk0p13" ino=145475 scontext=u:r:init:s0 tcontext=u:object_r:wifi_data_file:s0 tclass=lnk_file permissive=1
+[   11.900653,1] type=1400 audit(1456396117.710:49): avc: denied { module_request } for pid=323 comm="iptables" kmod="personality-8" scontext=u:r:netd:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   11.901463,1] type=1400 audit(1456396117.710:50): avc: denied { create } for pid=328 comm="thermald" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[   12.025534,1] init: Service 'rmt_oeminfo' (pid 448) exited with status 255
+[   12.025703,1] init: Service 'rmt_oeminfo' (pid 448) killing any children in process group
+[   12.027123,1] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   12.027283,1] init: Starting service 'geomagneticd'...
+[   12.065821,1] init: Service 'geomagneticd' (pid 454) exited with status 1
+[   12.065998,1] init: Service 'geomagneticd' (pid 454) killing any children in process group
+[   12.629358,0] msm_mctl_register_subdevs:552:Gemini: Failure: goto out
+[   12.629476,0] ov8825_truly_cm8313_sensor_power_up IN
+[   12.629553,0] ov8825_truly_cm8313_sensor_power_up, sensor_pwd:5, sensor_reset:6
+[   12.701398,1] type=1400 audit(1456396117.710:51): avc: denied { setopt } for pid=328 comm="thermald" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[   12.702211,1] type=1400 audit(1456396117.710:52): avc: denied { bind } for pid=328 comm="thermald" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[   12.702906,1] type=1400 audit(1456396117.730:53): avc: denied { execute_no_trans } for pid=331 comm="wlan_detect" path="/system/bin/sh" dev="mmcblk0p12" ino=15688 scontext=u:r:init:s0 tcontext=u:object_r:shell_exec:s0 tclass=file permissive=1
+[   12.704003,1] type=1400 audit(1456396117.800:54): avc: denied { read } for pid=328 comm="thermald" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[   12.704708,1] type=1400 audit(1456396117.840:55): avc: denied { ioctl } for pid=290 comm="mm-qcamera-daem" path="/dev/video100" dev="tmpfs" ino=3072 ioctlcmd=56c1 scontext=u:r:init:s0 tcontext=u:object_r:video_device:s0 tclass=chr_file permissive=1
+[   12.705429,1] type=1400 audit(1456396117.860:56): avc: denied { ioctl } for pid=292 comm="gpu_dcvsd" path="/dev/kgsl-3d0" dev="tmpfs" ino=4190 ioctlcmd=902 scontext=u:r:init:s0 tcontext=u:object_r:gpu_device:s0 tclass=chr_file permissive=1
+[   12.706101,1] type=1400 audit(1456396117.860:57): avc: denied { execmod } for pid=222 comm="rild" path="/system/lib/libril-qc-qmi-1.so" dev="mmcblk0p12" ino=39269 scontext=u:r:rild:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   12.713888,1] type=1400 audit(1456396117.910:59): avc: denied { module_request } for pid=331 comm="insmod" kmod="personality-8" scontext=u:r:toolbox:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   12.715168,1] type=1400 audit(1456396117.860:58): avc: denied { execmod } for pid=222 comm="rild" path="/system/lib/libdsutils.so" dev="mmcblk0p12" ino=39114 scontext=u:r:rild:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   12.716041,1] type=1400 audit(1456396117.990:60): avc: denied { write } for pid=266 comm="orientationd" name="event4" dev="tmpfs" ino=3063 scontext=u:r:init:s0 tcontext=u:object_r:input_device:s0 tclass=chr_file permissive=1
+[   12.716783,1] type=1400 audit(1456396117.990:61): avc: denied { ioctl } for pid=266 comm="orientationd" path="/dev/input/event4" dev="tmpfs" ino=3063 ioctlcmd=4506 scontext=u:r:init:s0 tcontext=u:object_r:input_device:s0 tclass=chr_file permissive=1
+[   12.717514,1] type=1400 audit(1456396118.010:62): avc: denied { read write } for pid=238 comm="rild" name="diag" dev="tmpfs" ino=2906 scontext=u:r:rild:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   12.718224,1] type=1400 audit(1456396118.010:63): avc: denied { open } for pid=238 comm="rild" name="diag" dev="tmpfs" ino=2906 scontext=u:r:rild:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   12.718894,1] type=1400 audit(1456396118.020:64): avc: denied { write } for pid=238 comm="rild" name="qmux_radio" dev="tmpfs" ino=4458 scontext=u:r:rild:s0 tcontext=u:object_r:socket_device:s0 tclass=dir permissive=1
+[   12.719749,1] type=1400 audit(1456396118.020:65): avc: denied { add_name } for pid=238 comm="rild" name="rild_sec_sync" scontext=u:r:rild:s0 tcontext=u:object_r:socket_device:s0 tclass=dir permissive=1
+[   12.720374,1] type=1400 audit(1456396118.020:66): avc: denied { create } for pid=238 comm="rild" name="rild_sec_sync" scontext=u:r:rild:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[   12.720993,1] type=1400 audit(1456396118.030:67): avc: denied { setattr } for pid=350 comm="rild" name=716D75785F636C69656E745F736F636B657420202020323338 dev="tmpfs" ino=3667 scontext=u:r:rild:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[   12.722358,1] type=1400 audit(1456396118.040:68): avc: denied { write } for pid=350 comm="rild" name="qmux_connect_socket" dev="tmpfs" ino=4694 scontext=u:r:rild:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[   12.723034,1] type=1400 audit(1456396118.040:69): avc: denied { getattr } for pid=257 comm="qmuxd" path=2F6465762F736F636B65742F716D75785F726164696F2F716D75785F636C69656E745F736F636B657420202020323338 dev="tmpfs" ino=3667 scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[   12.724413,1] type=1400 audit(1456396118.040:70): avc: denied { unlink } for pid=257 comm="qmuxd" name=716D75785F636C69656E745F736F636B657420202020323338 dev="tmpfs" ino=3667 scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[   12.725121,1] type=1400 audit(1456396118.150:71): avc: denied { sys_module } for pid=331 comm="insmod" capability=16 scontext=u:r:toolbox:s0 tcontext=u:r:toolbox:s0 tclass=capability permissive=1
+[   12.725838,1] type=1400 audit(1456396118.180:72): avc: denied { write } for pid=269 comm="wlan_detect" name="rapi_socket" dev="mmcblk0p13" ino=13 scontext=u:r:init:s0 tcontext=u:object_r:system_data_file:s0 tclass=sock_file permissive=1
+[   12.726621,1] type=1400 audit(1456396119.140:73): avc: denied { module_request } for pid=406 comm="bootanimation" kmod="personality-8" scontext=u:r:bootanim:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   12.732328,1] type=1400 audit(1456396121.180:74): avc: denied { execute_no_trans } for pid=448 comm="init" path="/system/bin/rmt_oeminfo" dev="mmcblk0p12" ino=15671 scontext=u:r:init:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   12.733371,1] type=1400 audit(1456396121.180:75): avc: denied { module_request } for pid=448 comm="rmt_oeminfo" kmod="personality-8" scontext=u:r:init:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   12.734354,1] type=1400 audit(1456396121.880:76): avc: denied { read write } for pid=226 comm="mediaserver" name="media0" dev="tmpfs" ino=3067 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   12.735069,0] csi_src_clk get failed
+[   12.735913,1] type=1400 audit(1456396121.900:77): avc: denied { open } for pid=226 comm="mediaserver" name="media0" dev="tmpfs" ino=3067 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   12.736603,1] type=1400 audit(1456396121.900:78): avc: denied { ioctl } for pid=226 comm="mediaserver" path="/dev/media0" dev="tmpfs" ino=3067 ioctlcmd=7c00 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   12.764036,0] [adsp.c:handle_adsp_rtos_mtoa_app] INIT_INFO Event
+[   12.764658,0] [adsp.c:msm_adsp_get] opening module QCAMTASK
+[   12.765479,0] [adsp.c:msm_adsp_get] opening module VFETASK
+[   12.766188,0] [adsp.c:msm_adsp_enable] enable 'QCAMTASK'state[0] id[17227151]
+[   12.774306,0] [adsp.c:handle_adsp_rtos_mtoa_app] module QCAMTASK: READY
+[   12.774536,0] [adsp.c:msm_adsp_enable] enable 'VFETASK'state[0] id[17227140]
+[   12.778694,0] [adsp.c:handle_adsp_rtos_mtoa_app] module VFETASK: READY
+[   12.778898,0] msm_enqueue: queue eventdata new max is 1
+[   12.780306,1] type=1400 audit(1456396122.050:79): avc: denied { ioctl } for pid=290 comm="mm-qcamera-daem" path="/dev/video100" dev="tmpfs" ino=3072 ioctlcmd=5659 scontext=u:r:init:s0 tcontext=u:object_r:video_device:s0 tclass=chr_file permissive=1
+[   12.786546,1] ov8825_truly_cm8313_sensor_setting: in, update_type:0x0, res:0x0
+[   12.833894,1] Register INIT
+[   12.976264,0] Update OTP
+[   13.053971,0] ***f:ov8825_truly_cm8313_update_otp,896***
+[   13.069153,0] ***f:ov8825_truly_cm8313_update_otp,911***
+[   13.075041,0] ***f:ov8825_truly_cm8313_read_otp_wb,744***
+[   13.075129,0] ov8825_truly_cm8313_read_otp_wb customer_id  = 0x02
+[   13.075209,0] ov8825_truly_cm8313_read_otp_wb lens_id      = 0x0e
+[   13.075288,0] ov8825_truly_cm8313_read_otp_wb rg_ratio     = 0x42
+[   13.075368,0] ov8825_truly_cm8313_read_otp_wb bg_ratio     = 0x50
+[   13.075444,0] ov8825_truly_cm8313_read_otp_wb user_data[0] = 0x00
+[   13.075521,0] ov8825_truly_cm8313_read_otp_wb user_data[1] = 0x00
+[   13.075598,0] ov8825_truly_cm8313_read_otp_wb user_data[2] = 0x00
+[   13.075676,0] ov8825_truly_cm8313_read_otp_wb user_data[3] = 0x97
+[   13.075754,0] ov8825_truly_cm8313_read_otp_wb user_data[4] = 0x8b
+[   13.075833,0] ***f:ov8825_truly_cm8313_read_otp_wb,754***
+[   13.091024,0] ***f:ov8825_truly_cm8313_update_otp,964***
+[   13.091101,0] ov8825_truly_cm8313_update_awb_gain r_gain = 0x040f
+[   13.091173,0] ov8825_truly_cm8313_update_awb_gain g_gain = 0x0400
+[   13.091246,0] ov8825_truly_cm8313_update_awb_gain b_gain = 0x0400
+[   13.092174,0] ***f:ov8825_truly_cm8313_update_otp,968***
+[   13.092224,0] ***f:ov8825_truly_cm8313_update_otp_lenc,773***
+[   13.187173,0] ***f:ov8825_truly_cm8313_update_otp_lenc,834***
+[   13.214788,0] ***f:ov8825_truly_cm8313_update_otp,970***
+[   13.226924,0] ***ov8825_truly_cm8313 lens reg:0x5800,0x11
+[   13.227508,0] ***ov8825_truly_cm8313 lens reg:0x5801,0xe
+[   13.228089,0] ***ov8825_truly_cm8313 lens reg:0x5802,0xd
+[   13.228668,0] ***ov8825_truly_cm8313 lens reg:0x5803,0xd
+[   13.229249,0] ***ov8825_truly_cm8313 lens reg:0x5804,0xf
+[   13.229823,0] ***ov8825_truly_cm8313 lens reg:0x5805,0x17
+[   13.230438,0] ***ov8825_truly_cm8313 lens reg:0x5806,0xa
+[   13.231096,0] ***ov8825_truly_cm8313 lens reg:0x5807,0x6
+[   13.231746,0] ***ov8825_truly_cm8313 lens reg:0x5808,0x4
+[   13.232389,0] ***ov8825_truly_cm8313 lens reg:0x5809,0x4
+[   13.233024,0] ***ov8825_truly_cm8313 lens reg:0x580a,0x7
+[   13.233649,0] ***ov8825_truly_cm8313 lens reg:0x580b,0xb
+[   13.234351,0] ***ov8825_truly_cm8313 lens reg:0x580c,0x7
+[   13.234981,0] ***ov8825_truly_cm8313 lens reg:0x580d,0x2
+[   13.235609,0] ***ov8825_truly_cm8313 lens reg:0x580e,0x0
+[   13.236238,0] ***ov8825_truly_cm8313 lens reg:0x580f,0x0
+[   13.236874,0] ***ov8825_truly_cm8313 lens reg:0x5810,0x3
+[   13.237661,0] ***ov8825_truly_cm8313 lens reg:0x5811,0x8
+[   13.238306,0] ***ov8825_truly_cm8313 lens reg:0x5812,0x7
+[   13.238948,0] ***ov8825_truly_cm8313 lens reg:0x5813,0x2
+[   13.239603,0] ***ov8825_truly_cm8313 lens reg:0x5814,0x0
+[   13.240264,0] ***ov8825_truly_cm8313 lens reg:0x5815,0x0
+[   13.240916,0] ***ov8825_truly_cm8313 lens reg:0x5816,0x3
+[   13.241558,0] ***ov8825_truly_cm8313 lens reg:0x5817,0x9
+[   13.242186,0] ***ov8825_truly_cm8313 lens reg:0x5818,0xc
+[   13.242821,0] ***ov8825_truly_cm8313 lens reg:0x5819,0x7
+[   13.243476,0] ***ov8825_truly_cm8313 lens reg:0x581a,0x5
+[   13.244129,0] ***ov8825_truly_cm8313 lens reg:0x581b,0x5
+[   13.244776,0] ***ov8825_truly_cm8313 lens reg:0x581c,0x8
+[   13.245429,0] ***ov8825_truly_cm8313 lens reg:0x581d,0xd
+[   13.246074,0] ***ov8825_truly_cm8313 lens reg:0x581e,0x16
+[   13.246738,0] ***ov8825_truly_cm8313 lens reg:0x581f,0x10
+[   13.247389,0] ***ov8825_truly_cm8313 lens reg:0x5820,0xf
+[   13.248033,0] ***ov8825_truly_cm8313 lens reg:0x5821,0xf
+[   13.248679,0] ***ov8825_truly_cm8313 lens reg:0x5822,0x13
+[   13.249319,0] ***ov8825_truly_cm8313 lens reg:0x5823,0x1a
+[   13.249954,0] ***ov8825_truly_cm8313 lens reg:0x5824,0x46
+[   13.250608,0] ***ov8825_truly_cm8313 lens reg:0x5825,0x20
+[   13.251266,0] ***ov8825_truly_cm8313 lens reg:0x5826,0x20
+[   13.251921,0] ***ov8825_truly_cm8313 lens reg:0x5827,0x20
+[   13.252808,0] ***ov8825_truly_cm8313 lens reg:0x5828,0x46
+[   13.253464,0] ***ov8825_truly_cm8313 lens reg:0x5829,0x2
+[   13.254103,0] ***ov8825_truly_cm8313 lens reg:0x582a,0x40
+[   13.254796,0] ***ov8825_truly_cm8313 lens reg:0x582b,0x40
+[   13.255499,0] ***ov8825_truly_cm8313 lens reg:0x582c,0x40
+[   13.256151,0] ***ov8825_truly_cm8313 lens reg:0x582d,0x2
+[   13.256856,0] ***ov8825_truly_cm8313 lens reg:0x582e,0x20
+[   13.257526,0] ***ov8825_truly_cm8313 lens reg:0x582f,0x42
+[   13.258211,0] ***ov8825_truly_cm8313 lens reg:0x5830,0x62
+[   13.259251,0] ***ov8825_truly_cm8313 lens reg:0x5831,0x62
+[   13.259971,0] ***ov8825_truly_cm8313 lens reg:0x5832,0x20
+[   13.260681,0] ***ov8825_truly_cm8313 lens reg:0x5833,0x22
+[   13.261363,0] ***ov8825_truly_cm8313 lens reg:0x5834,0x42
+[   13.262021,0] ***ov8825_truly_cm8313 lens reg:0x5835,0x42
+[   13.262668,0] ***ov8825_truly_cm8313 lens reg:0x5836,0x42
+[   13.263291,0] ***ov8825_truly_cm8313 lens reg:0x5837,0x22
+[   13.263916,0] ***ov8825_truly_cm8313 lens reg:0x5838,0x44
+[   13.264568,0] ***ov8825_truly_cm8313 lens reg:0x5839,0x22
+[   13.265231,0] ***ov8825_truly_cm8313 lens reg:0x583a,0x20
+[   13.265879,0] ***ov8825_truly_cm8313 lens reg:0x583b,0x42
+[   13.266531,0] ***ov8825_truly_cm8313 lens reg:0x583c,0x44
+[   13.267178,0] ***ov8825_truly_cm8313 lens reg:0x583d,0xae
+[   13.290469,1] msm_enqueue: queue control new max is 1
+[   13.291786,1] type=1400 audit(1456396122.560:80): avc: denied { write } for pid=226 comm="mediaserver" name="cam_socket0" dev="mmcblk0p13" ino=14 scontext=u:r:mediaserver:s0 tcontext=u:object_r:system_data_file:s0 tclass=sock_file permissive=1
+[   13.320576,1] type=1400 audit(1456396122.560:81): avc: denied { sendto } for pid=226 comm="mediaserver" path="/data/cam_socket0" scontext=u:r:mediaserver:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[   13.321503,1] type=1400 audit(1456396122.580:82): avc: denied { read } for pid=497 comm="rm" path="pipe:[4860]" dev="pipefs" ino=4860 scontext=u:r:toolbox:s0 tcontext=u:r:init:s0 tclass=fifo_file permissive=1
+[   13.323229,1] type=1400 audit(1456396122.580:83): avc: denied { read write } for pid=497 comm="rm" path="/dev/diag" dev="tmpfs" ino=2906 scontext=u:r:toolbox:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   13.345748,0] call_led_set_state : All LED flash probed failed or didn't register led_set_state after probe.
+[   13.679799,1] call_led_set_state : All LED flash probed failed or didn't register led_set_state after probe.
+[   13.707458,1] type=1400 audit(1456396122.730:84): avc: denied { execmod } for pid=226 comm="mediaserver" path="/system/lib/libmmstillomx.so" dev="mmcblk0p12" ino=39216 scontext=u:r:mediaserver:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   13.720263,1] [adsp.c:msm_adsp_disable] disable 'QCAMTASK'
+[   13.722129,0] [adsp.c:msm_adsp_disable] disable 'VFETASK'
+[   13.724648,0] [adsp.c:msm_adsp_put] closing module QCAMTASK
+[   13.724798,0] [adsp.c:msm_adsp_put] closing module VFETASK
+[   13.728674,0] ov8825_truly_cm8313_sensor_power_down IN
+[   13.823974,0] msm_release_ion_client Calling ion_client_destroy
+[   13.828873,0] msm_mctl_register_subdevs:552:Gemini: Failure: goto out
+[   13.840646,1] type=1400 audit(1456396123.020:85): avc: denied { sys_module } for pid=248 comm="netmgrd" capability=16 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability permissive=1
+[   13.922368,1] init: Service 'wlan_detect' (pid 269) exited with status 0
+[   13.934636,0] csi_src_clk get failed
+[   13.959384,0] [adsp.c:msm_adsp_get] opening module QCAMTASK
+[   13.960951,0] [adsp.c:msm_adsp_get] opening module VFETASK
+[   13.962404,0] [adsp.c:msm_adsp_enable] enable 'QCAMTASK'state[0] id[17227151]
+[   13.967141,0] [adsp.c:handle_adsp_rtos_mtoa_app] module QCAMTASK: READY
+[   13.967588,0] [adsp.c:msm_adsp_enable] enable 'VFETASK'state[0] id[17227140]
+[   13.970588,0] [adsp.c:handle_adsp_rtos_mtoa_app] module VFETASK: READY
+[   13.970774,0] msm_enqueue: queue eventdata new max is 1
+[   13.986638,1] msm_enqueue: queue control new max is 1
+[   13.987808,1] mm-qcamera-daem: unhandled page fault (11) at 0x00000008, code 0x005
+[   13.987931,1] pgd = e58e0000
+[   13.987986,1] [00000008] *pgd=00000000
+[   13.988046,1] 
+[   13.988084,1] Pid: 560, comm:      mm-qcamera-daem
+[   13.988158,1] CPU: 1    Tainted: G           O  (3.4.110-Chil360-MM-g80e5c78 #14)
+[   13.988264,1] PC is at 0xb6efe8ac
+[   13.988319,1] LR is at 0xb6efe86b
+[   13.988384,1] pc : [<b6efe8ac>]    lr : [<b6efe86b>]    psr: 800f0030
+[   13.988419,1] sp : b6bd5ef0  ip : b7314808  fp : 00000002
+[   13.988536,1] r10: 00000003  r9 : 00000000  r8 : b7302008
+[   13.988613,1] r7 : b7314808  r6 : 00000000  r5 : b6efe861  r4 : b6bd5f14
+[   13.988699,1] r3 : 00000000  r2 : 00000000  r1 : b6bd5f20  r0 : b72f1460
+[   13.988786,1] Flags: Nzcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+[   13.988893,1] Control: 10c5387d  Table: 25ae004a  DAC: 00000015
+[   13.989019,1] [<c0015c6c>] (unwind_backtrace+0x0/0x11c) from [<c06746f4>] (dump_stack+0x18/0x1c)
+[   13.989159,1] [<c06746f4>] (dump_stack+0x18/0x1c) from [<c000ffa8>] (show_regs+0x44/0x50)
+[   13.989298,1] [<c000ffa8>] (show_regs+0x44/0x50) from [<c001c260>] (__do_user_fault+0xd4/0x150)
+[   13.989439,1] [<c001c260>] (__do_user_fault+0xd4/0x150) from [<c06807e8>] (do_page_fault+0x370/0x3dc)
+[   13.989581,1] [<c06807e8>] (do_page_fault+0x370/0x3dc) from [<c0680878>] (do_translation_fault+0x24/0xe0)
+[   13.989721,1] [<c0680878>] (do_translation_fault+0x24/0xe0) from [<c0008418>] (do_DataAbort+0x3c/0xa0)
+[   13.989856,1] [<c0008418>] (do_DataAbort+0x3c/0xa0) from [<c067ee58>] (__dabt_usr+0x38/0x40)
+[   13.989969,1] Exception stack(0xdf0effb0 to 0xdf0efff8)
+[   13.990053,1] ffa0:                                     b72f1460 b6bd5f20 00000000 00000000
+[   13.990173,1] ffc0: b6bd5f14 b6efe861 00000000 b7314808 b7302008 00000000 00000003 00000002
+[   13.990291,1] ffe0: b7314808 b6bd5ef0 b6efe86b b6efe8ac 800f0030 ffffffff
+[   13.992348,1] type=1400 audit(1456396123.260:86): avc: denied { ptrace } for pid=216 comm="debuggerd" scontext=u:r:debuggerd:s0 tcontext=u:r:init:s0 tclass=process permissive=1
+[   14.042673,1] mm-qcamera-daem: unhandled page fault (11) at 0x00000008, code 0x005
+[   14.042756,1] pgd = e58e0000
+[   14.042789,1] [00000008] *pgd=00000000
+[   14.042823,1] 
+[   14.042849,1] Pid: 560, comm:      mm-qcamera-daem
+[   14.042913,1] CPU: 1    Tainted: G           O  (3.4.110-Chil360-MM-g80e5c78 #14)
+[   14.042998,1] PC is at 0xb6efe8ac
+[   14.043038,1] LR is at 0xb6efe86b
+[   14.043083,1] pc : [<b6efe8ac>]    lr : [<b6efe86b>]    psr: 800f0030
+[   14.043133,1] sp : b6bd5ef0  ip : b7314808  fp : 00000002
+[   14.043189,1] r10: 00000003  r9 : 00000000  r8 : b7302008
+[   14.043249,1] r7 : b7314808  r6 : 00000000  r5 : b6efe861  r4 : b6bd5f14
+[   14.043319,1] r3 : 00000000  r2 : 00000000  r1 : b6bd5f20  r0 : b72f1460
+[   14.043416,1] Flags: Nzcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+[   14.043519,1] Control: 10c5387d  Table: 25ae004a  DAC: 00000015
+[   14.043654,1] [<c0015c6c>] (unwind_backtrace+0x0/0x11c) from [<c06746f4>] (dump_stack+0x18/0x1c)
+[   14.043879,1] [<c06746f4>] (dump_stack+0x18/0x1c) from [<c000ffa8>] (show_regs+0x44/0x50)
+[   14.043986,1] [<c000ffa8>] (show_regs+0x44/0x50) from [<c001c260>] (__do_user_fault+0xd4/0x150)
+[   14.044128,1] [<c001c260>] (__do_user_fault+0xd4/0x150) from [<c06807e8>] (do_page_fault+0x370/0x3dc)
+[   14.044281,1] [<c06807e8>] (do_page_fault+0x370/0x3dc) from [<c0680878>] (do_translation_fault+0x24/0xe0)
+[   14.044388,1] [<c0680878>] (do_translation_fault+0x24/0xe0) from [<c0008418>] (do_DataAbort+0x3c/0xa0)
+[   14.044481,1] [<c0008418>] (do_DataAbort+0x3c/0xa0) from [<c067ee58>] (__dabt_usr+0x38/0x40)
+[   14.044553,1] Exception stack(0xdf0effb0 to 0xdf0efff8)
+[   14.044604,1] ffa0:                                     b72f1460 b6bd5f20 00000000 00000000
+[   14.044706,1] ffc0: b6bd5f14 b6efe861 00000000 b7314808 b7302008 00000000 00000003 00000002
+[   14.044814,1] ffe0: b7314808 b6bd5ef0 b6efe86b b6efe8ac 800f0030 ffffffff
+[   14.794683,1] type=1400 audit(1456396123.850:87): avc: denied { create } for pid=248 comm="netmgrd" name=716D75785F636C69656E745F736F636B657420202020323438 scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[   14.983863,0] msm_server_control: wait_event error -110
+[   14.983906,0] msm_cam_stop_hardware: stopping hardware upon error
+[   14.987404,1] type=1400 audit(1456396123.850:88): avc: denied { setattr } for pid=248 comm="netmgrd" name=716D75785F636C69656E745F736F636B657420202020323438 dev="tmpfs" ino=3907 scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[   14.987959,1] type=1400 audit(1456396123.850:89): avc: denied { write } for pid=248 comm="netmgrd" name="qmux_connect_socket" dev="tmpfs" ino=4694 scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[   14.988468,1] type=1400 audit(1456396123.850:90): avc: denied { getattr } for pid=257 comm="qmuxd" path=2F6465762F736F636B65742F716D75785F726164696F2F716D75785F636C69656E745F736F636B657420202020323438 dev="tmpfs" ino=3907 scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[   14.988991,1] type=1400 audit(1456396123.850:91): avc: denied { unlink } for pid=257 comm="qmuxd" name=716D75785F636C69656E745F736F636B657420202020323438 dev="tmpfs" ino=3907 scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[   14.989553,1] type=1400 audit(1456396123.880:92): avc: denied { create } for pid=248 comm="netmgrd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+[   14.990026,1] type=1400 audit(1456396123.880:93): avc: denied { bind } for pid=248 comm="netmgrd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+[   14.990496,1] type=1400 audit(1456396123.880:94): avc: denied { create } for pid=248 comm="netmgrd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_socket permissive=1
+[   14.990959,1] type=1400 audit(1456396123.880:95): avc: denied { bind } for pid=248 comm="netmgrd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_socket permissive=1
+[   14.991421,1] type=1400 audit(1456396123.950:96): avc: denied { read } for pid=579 comm="netmgrd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_socket permissive=1
+[   14.992589,1] type=1400 audit(1456396123.950:97): avc: denied { write } for pid=579 comm="netmgrd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_socket permissive=1
+[   15.180426,0] [adsp.c:msm_adsp_disable] disable 'QCAMTASK'
+[   15.182323,0] [adsp.c:msm_adsp_disable] disable 'VFETASK'
+[   15.184938,0] [adsp.c:msm_adsp_put] closing module QCAMTASK
+[   15.184999,0] [adsp.c:msm_adsp_put] closing module VFETASK
+[   15.820208,1] mm-qcamera-daem: unhandled page fault (11) at 0x00000008, code 0x005
+[   15.820324,1] pgd = e58e0000
+[   15.820374,1] [00000008] *pgd=00000000
+[   15.820433,1] 
+[   15.820473,1] Pid: 560, comm:      mm-qcamera-daem
+[   15.820544,1] CPU: 1    Tainted: G           O  (3.4.110-Chil360-MM-g80e5c78 #14)
+[   15.820646,1] PC is at 0xb6efe8ac
+[   15.820701,1] LR is at 0xb6efe86b
+[   15.820764,1] pc : [<b6efe8ac>]    lr : [<b6efe86b>]    psr: 800f0030
+[   15.820794,1] sp : b6bd5ef0  ip : b7314808  fp : 00000002
+[   15.820908,1] r10: 00000003  r9 : 00000000  r8 : b7302008
+[   15.820984,1] r7 : b7314808  r6 : 00000000  r5 : b6efe861  r4 : b6bd5f14
+[   15.821071,1] r3 : 00000000  r2 : 00000000  r1 : b6bd5f20  r0 : b72f1460
+[   15.821159,1] Flags: Nzcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+[   15.821263,1] Control: 10c5387d  Table: 25ae004a  DAC: 00000015
+[   15.821381,1] [<c0015c6c>] (unwind_backtrace+0x0/0x11c) from [<c06746f4>] (dump_stack+0x18/0x1c)
+[   15.821521,1] [<c06746f4>] (dump_stack+0x18/0x1c) from [<c000ffa8>] (show_regs+0x44/0x50)
+[   15.821656,1] [<c000ffa8>] (show_regs+0x44/0x50) from [<c001c260>] (__do_user_fault+0xd4/0x150)
+[   15.821793,1] [<c001c260>] (__do_user_fault+0xd4/0x150) from [<c06807e8>] (do_page_fault+0x370/0x3dc)
+[   15.821933,1] [<c06807e8>] (do_page_fault+0x370/0x3dc) from [<c0680878>] (do_translation_fault+0x24/0xe0)
+[   15.822071,1] [<c0680878>] (do_translation_fault+0x24/0xe0) from [<c0008418>] (do_DataAbort+0x3c/0xa0)
+[   15.822206,1] [<c0008418>] (do_DataAbort+0x3c/0xa0) from [<c067ee58>] (__dabt_usr+0x38/0x40)
+[   15.822326,1] Exception stack(0xdf0effb0 to 0xdf0efff8)
+[   15.822406,1] ffa0:                                     b72f1460 b6bd5f20 00000000 00000000
+[   15.822564,1] ffc0: b6bd5f14 b6efe861 00000000 b7314808 b7302008 00000000 00000003 00000002
+[   15.822714,1] ffe0: b7314808 b6bd5ef0 b6efe86b b6efe8ac 800f0030 ffffffff
+[   15.825509,1] init: Service 'qcamerasvr' (pid 290) killed by signal 11
+[   15.825674,1] init: Service 'qcamerasvr' (pid 290) killing any children in process group
+[   15.827114,1] init: Warning!  Service qcamerasvr needs a SELinux domain defined; please fix!
+[   15.827284,1] init: Starting service 'qcamerasvr'...
+[   16.036294,1] type=1400 audit(1456396125.310:98): avc: denied { write } for pid=614 comm="mm-qcamera-daem" name="video100" dev="tmpfs" ino=3072 scontext=u:r:init:s0 tcontext=u:object_r:video_device:s0 tclass=chr_file permissive=1
+[   16.829449,1] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   16.829626,1] init: Starting service 'rmt_oeminfo'...
+[   16.952529,1] init: Service 'rmt_oeminfo' (pid 644) exited with status 255
+[   16.952623,1] init: Service 'rmt_oeminfo' (pid 644) killing any children in process group
+[   17.955901,0] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   17.956059,0] init: Starting service 'geomagneticd'...
+[   17.963359,0] init: Service 'geomagneticd' (pid 707) exited with status 1
+[   17.963481,0] init: Service 'geomagneticd' (pid 707) killing any children in process group
+[   21.519074,0] msm_batt_update_psy_status: enter
+[   21.519974,0] BATT: same event count = 3 (2, 2, 0) 3533 mV, 0%, 250, (0, 0, 0)
+[   21.966193,0] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   21.966458,0] init: Starting service 'rmt_oeminfo'...
+[   22.070276,0] init: Service 'rmt_oeminfo' (pid 936) exited with status 255
+[   22.070371,0] init: Service 'rmt_oeminfo' (pid 936) killing any children in process group
+[   22.071691,0] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   22.071774,0] init: Starting service 'geomagneticd'...
+[   22.088811,0] init: Service 'geomagneticd' (pid 942) exited with status 1
+[   22.089014,0] init: Service 'geomagneticd' (pid 942) killing any children in process group
+[   22.457764,0] msm_otg_resume: usb exited from low power mode
+[   22.459213,0] msm_batt_update_psy_status: enter
+[   22.460563,0] BATT: rcvd: 0(0), 0(2), 0(0), 2(0x6d580 [0%]); 3533, 250; (1, 0, 0)
+[   22.460699,0] BATT: Battery good.
+[   22.460759,0] BATT: Battery -> discharging
+[   22.460828,0] BATT: Supply = battery
+[   22.460909,0] msm_batt_update_psy_status: exit
+[   22.461734,1] type=1400 audit(1456396131.730:99): avc: denied { read } for pid=328 comm="thermald" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[   22.684314,0] android_work: android_work: did not send uevent (0 0   (null))
+[   23.018658,0] android_work: android_work: sent uevent USB_STATE=CONNECTED
+[   23.224511,0] msm_batt_update_psy_status: enter
+[   23.225126,0] android_work: android_work: sent uevent USB_STATE=DISCONNECTED
+[   23.226629,1] BATT: rcvd: 3(2), 0(2), 5(0), 2(0x6d580 [0%]); 3533, 250; (0, 0, 0)
+[   23.226731,1] BATT: No charging.
+[   23.226769,1] BATT: Battery good.
+[   23.226804,1] BATT: Battery -> discharging
+[   23.226853,1] BATT: Supply = battery
+[   23.226929,1] msm_batt_update_psy_status: exit
+[   23.454136,0] msm_otg_suspend: usb in low power mode
+[   24.286248,1] type=1400 audit(1456396133.560:100): avc: denied { module_request } for pid=1062 comm="idmap" kmod="personality-8" scontext=u:r:zygote:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   24.765546,0] msm_otg_resume: usb exited from low power mode
+[   24.770086,0] msm_batt_update_psy_status: enter
+[   24.772066,0] BATT: rcvd: 0(0), 0(2), 0(0), 2(0x6d580 [0%]); 3533, 250; (1, 0, 0)
+[   24.772196,0] BATT: Battery good.
+[   24.772256,0] BATT: Battery -> discharging
+[   24.772369,0] BATT: Supply = battery
+[   24.772798,0] msm_batt_update_psy_status: exit
+[   24.994263,0] android_work: android_work: did not send uevent (0 0   (null))
+[   25.203886,0] msm_server_control: wait_event error -110
+[   25.203924,0] msm_send_close_server failed -110
+[   25.203954,0] msm_release_ion_client Calling ion_client_destroy
+[   25.233293,0] android_work: android_work: sent uevent USB_STATE=CONNECTED
+[   25.367701,0] android_usb gadget: high-speed config #1: android
+[   25.424004,0] android_work: android_work: sent uevent USB_STATE=CONFIGURED
+[   25.994538,0] 
+[   25.994568,0] Charger Type: STD DOWNSTREAM PORT
+[   25.997426,0] msm_chg_usb_charger_connected
+[   25.998719,0] msm_chg_usb_i_is_available(500)
+[   25.999843,0] msm_batt_update_psy_status: enter
+[   26.001109,0] BATT: rcvd: 0(0), 2(0), 0(0), 2(0x6d580 [0%]); 3533, 250; (1, 0, 0)
+[   26.001219,0] msm_batt_update_psy_status: exit
+[   26.090781,0] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   26.090863,0] init: Starting service 'rmt_oeminfo'...
+[   26.210439,0] init: Service 'rmt_oeminfo' (pid 1154) exited with status 255
+[   26.210544,0] init: Service 'rmt_oeminfo' (pid 1154) killing any children in process group
+[   26.505159,0] msm_batt_update_psy_status: enter
+[   26.506106,0] BATT: same event count = 1 (0, 0, 0) 3533 mV, 0%, 250, (1, 0, 0)
+[   27.212889,0] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   27.213069,0] init: Starting service 'geomagneticd'...
+[   27.237326,0] init: Service 'geomagneticd' (pid 1211) exited with status 1
+[   27.237568,0] init: Service 'geomagneticd' (pid 1211) killing any children in process group
+[   28.543449,0] request_suspend_state: wakeup (3->0) at 28549690000 (2016-02-25 10:28:57.824146666 UTC)
+[   28.944819,0] system_server: unhandled page fault (11) at 0x00000000, code 0x005
+[   28.944934,0] pgd = d91fc000
+[   28.944984,0] [00000000] *pgd=00000000
+[   28.945043,0] 
+[   28.945081,0] Pid: 1214, comm:        system_server
+[   28.945153,0] CPU: 0    Tainted: G           O  (3.4.110-Chil360-MM-g80e5c78 #14)
+[   28.945254,0] PC is at 0x73f0c386
+[   28.945308,0] LR is at 0x733f2ed7
+[   28.945371,0] pc : [<73f0c386>]    lr : [<733f2ed7>]    psr: 400e0030
+[   28.945401,0] sp : bebeebf0  ip : 000000da  fp : 70c32a40
+[   28.945516,0] r10: 12c04bc0  r9 : b7dbcb40  r8 : 12d10160
+[   28.945589,0] r7 : 00000000  r6 : 00000000  r5 : 703f82ac  r4 : 00000000
+[   28.945674,0] r3 : 00000001  r2 : 00000000  r1 : 00000000  r0 : 12c56100
+[   28.945761,0] Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+[   28.945864,0] Control: 10c5387d  Table: 193fc04a  DAC: 00000015
+[   28.945981,0] [<c0015c6c>] (unwind_backtrace+0x0/0x11c) from [<c06746f4>] (dump_stack+0x18/0x1c)
+[   28.946119,0] [<c06746f4>] (dump_stack+0x18/0x1c) from [<c000ffa8>] (show_regs+0x44/0x50)
+[   28.946253,0] [<c000ffa8>] (show_regs+0x44/0x50) from [<c001c260>] (__do_user_fault+0xd4/0x150)
+[   28.946389,0] [<c001c260>] (__do_user_fault+0xd4/0x150) from [<c06807e8>] (do_page_fault+0x370/0x3dc)
+[   28.946526,0] [<c06807e8>] (do_page_fault+0x370/0x3dc) from [<c0680878>] (do_translation_fault+0x24/0xe0)
+[   28.946666,0] [<c0680878>] (do_translation_fault+0x24/0xe0) from [<c0008418>] (do_DataAbort+0x3c/0xa0)
+[   28.946808,0] [<c0008418>] (do_DataAbort+0x3c/0xa0) from [<c067ee58>] (__dabt_usr+0x38/0x40)
+[   28.946933,0] Exception stack(0xd6687fb0 to 0xd6687ff8)
+[   28.947019,0] 7fa0:                                     12c56100 00000000 00000000 00000001
+[   28.947149,0] 7fc0: 00000000 703f82ac 00000000 00000000 12d10160 b7dbcb40 12c04bc0 70c32a40
+[   28.947711,0] 7fe0: 000000da bebeebf0 733f2ed7 73f0c386 400e0030 ffffffff
+[   29.311204,1] system_server: unhandled page fault (11) at 0x00000000, code 0x005
+[   29.311249,1] pgd = d91fc000
+[   29.311273,1] [00000000] *pgd=00000000
+[   29.311298,1] 
+[   29.311316,1] Pid: 1214, comm:        system_server
+[   29.311353,1] CPU: 1    Tainted: G           O  (3.4.110-Chil360-MM-g80e5c78 #14)
+[   29.311399,1] PC is at 0x73f0b34a
+[   29.311424,1] LR is at 0x733f2ed7
+[   29.311459,1] pc : [<73f0b34a>]    lr : [<733f2ed7>]    psr: 400f0030
+[   29.311491,1] sp : bebf0350  ip : 000000d9  fp : 12d168e0
+[   29.311526,1] r10: 707b0040  r9 : b7dbcb40  r8 : 744ed718
+[   29.311563,1] r7 : 00000000  r6 : 00000000  r5 : 703f82ac  r4 : 00000000
+[   29.311606,1] r3 : 12d168e0  r2 : 00000000  r1 : 00000000  r0 : 12c597c0
+[   29.311648,1] Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+[   29.311694,1] Control: 10c5387d  Table: 193fc04a  DAC: 00000015
+[   29.311773,1] [<c0015c6c>] (unwind_backtrace+0x0/0x11c) from [<c06746f4>] (dump_stack+0x18/0x1c)
+[   29.311846,1] [<c06746f4>] (dump_stack+0x18/0x1c) from [<c000ffa8>] (show_regs+0x44/0x50)
+[   29.311919,1] [<c000ffa8>] (show_regs+0x44/0x50) from [<c001c260>] (__do_user_fault+0xd4/0x150)
+[   29.311993,1] [<c001c260>] (__do_user_fault+0xd4/0x150) from [<c06807e8>] (do_page_fault+0x370/0x3dc)
+[   29.312066,1] [<c06807e8>] (do_page_fault+0x370/0x3dc) from [<c0680878>] (do_translation_fault+0x24/0xe0)
+[   29.312136,1] [<c0680878>] (do_translation_fault+0x24/0xe0) from [<c0008418>] (do_DataAbort+0x3c/0xa0)
+[   29.312204,1] [<c0008418>] (do_DataAbort+0x3c/0xa0) from [<c067ee58>] (__dabt_usr+0x38/0x40)
+[   29.312253,1] Exception stack(0xd6687fb0 to 0xd6687ff8)
+[   29.312294,1] 7fa0:                                     12c597c0 00000000 00000000 12d168e0
+[   29.312354,1] 7fc0: 00000000 703f82ac 00000000 00000000 744ed718 b7dbcb40 707b0040 12d168e0
+[   29.312411,1] 7fe0: 000000d9 bebf0350 733f2ed7 73f0b34a 400f0030 ffffffff
+[   29.706571,0] init: Service 'zygote' (pid 280) killed by signal 9
+[   29.706776,0] init: Service 'zygote' (pid 280) killing any children in process group
+[   29.707401,0] init: write_file: Unable to open '/sys/android_power/request_state': No such file or directory
+[   29.708368,0] request_suspend_state: wakeup (0->0) at 29714626667 (2016-02-25 10:28:58.989090000 UTC)
+[   29.708698,0] init: Service 'media' is being killed...
+[   29.711288,1] init: Service 'netd' is being killed...
+[   29.717444,1] init: Service 'netd' (pid 215) killed by signal 9
+[   29.717543,1] init: Service 'netd' (pid 215) killing any children in process group
+[   29.718789,1] init: Service 'media' (pid 226) killed by signal 9
+[   29.718879,1] init: Service 'media' (pid 226) killing any children in process group
+[   29.720141,1] init: Starting service 'netd'...
+[   29.722054,1] init: Starting service 'media'...
+[   29.724396,1] init: Starting service 'zygote'...
+[   29.729349,1] type=1400 audit(1456396139.000:101): avc: denied { module_request } for pid=1282 comm="netd" kmod="personality-8" scontext=u:r:netd:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   31.489753,0] msm_batt_update_psy_status: enter
+[   31.490473,0] BATT: same event count = 2 (0, 0, 0) 3533 mV, 0%, 250, (1, 0, 0)
+[   31.726649,1] init: Warning!  Service rmt_oeminfo needs a SELinux domain defined; please fix!
+[   31.726808,1] init: Starting service 'rmt_oeminfo'...
+[   31.864796,1] init: Service 'rmt_oeminfo' (pid 1342) exited with status 255
+[   31.864891,1] init: Service 'rmt_oeminfo' (pid 1342) killing any children in process group
+[   32.054949,1] type=1400 audit(1456396141.330:102): avc: denied { read write } for pid=1283 comm="mediaserver" name="media0" dev="tmpfs" ino=3067 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   32.062946,1] msm_mctl_register_subdevs:552:Gemini: Failure: goto out
+[   32.063048,1] ov8825_truly_cm8313_sensor_power_up IN
+[   32.063121,1] ov8825_truly_cm8313_sensor_power_up, sensor_pwd:5, sensor_reset:6
+[   32.090333,1] type=1400 audit(1456396141.330:103): avc: denied { open } for pid=1283 comm="mediaserver" name="media0" dev="tmpfs" ino=3067 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   32.148828,1] type=1400 audit(1456396141.330:104): avc: denied { ioctl } for pid=1283 comm="mediaserver" path="/dev/media0" dev="tmpfs" ino=3067 ioctlcmd=7c00 scontext=u:r:mediaserver:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   32.154838,0] csi_src_clk get failed
+[   32.179253,0] [adsp.c:msm_adsp_get] opening module QCAMTASK
+[   32.180941,0] [adsp.c:msm_adsp_get] opening module VFETASK
+[   32.181828,0] [adsp.c:msm_adsp_enable] enable 'QCAMTASK'state[0] id[17227151]
+[   32.185793,0] [adsp.c:handle_adsp_rtos_mtoa_app] module QCAMTASK: READY
+[   32.186233,0] [adsp.c:msm_adsp_enable] enable 'VFETASK'state[0] id[17227140]
+[   32.188488,0] [adsp.c:handle_adsp_rtos_mtoa_app] module VFETASK: READY
+[   32.188733,0] msm_enqueue: queue eventdata new max is 1
+[   32.196081,0] ov8825_truly_cm8313_sensor_setting: in, update_type:0x0, res:0x0
+[   32.243848,0] Register INIT
+[   32.389483,0] Update OTP
+[   32.463873,0] ***f:ov8825_truly_cm8313_update_otp,896***
+[   32.482651,0] ***f:ov8825_truly_cm8313_update_otp,911***
+[   32.488516,0] ***f:ov8825_truly_cm8313_read_otp_wb,744***
+[   32.488558,0] ov8825_truly_cm8313_read_otp_wb customer_id  = 0x02
+[   32.488593,0] ov8825_truly_cm8313_read_otp_wb lens_id      = 0x0e
+[   32.488629,0] ov8825_truly_cm8313_read_otp_wb rg_ratio     = 0x42
+[   32.488666,0] ov8825_truly_cm8313_read_otp_wb bg_ratio     = 0x50
+[   32.488701,0] ov8825_truly_cm8313_read_otp_wb user_data[0] = 0x00
+[   32.488736,0] ov8825_truly_cm8313_read_otp_wb user_data[1] = 0x00
+[   32.488771,0] ov8825_truly_cm8313_read_otp_wb user_data[2] = 0x00
+[   32.488808,0] ov8825_truly_cm8313_read_otp_wb user_data[3] = 0x97
+[   32.488843,0] ov8825_truly_cm8313_read_otp_wb user_data[4] = 0x8b
+[   32.488879,0] ***f:ov8825_truly_cm8313_read_otp_wb,754***
+[   32.502414,0] ***f:ov8825_truly_cm8313_update_otp,964***
+[   32.502501,0] ov8825_truly_cm8313_update_awb_gain r_gain = 0x040f
+[   32.502579,0] ov8825_truly_cm8313_update_awb_gain g_gain = 0x0400
+[   32.502658,0] ov8825_truly_cm8313_update_awb_gain b_gain = 0x0400
+[   32.503546,0] ***f:ov8825_truly_cm8313_update_otp,968***
+[   32.503628,0] ***f:ov8825_truly_cm8313_update_otp_lenc,773***
+[   32.606861,0] ***f:ov8825_truly_cm8313_update_otp_lenc,834***
+[   32.636608,0] ***f:ov8825_truly_cm8313_update_otp,970***
+[   32.648836,0] ***ov8825_truly_cm8313 lens reg:0x5800,0x11
+[   32.649441,0] ***ov8825_truly_cm8313 lens reg:0x5801,0xe
+[   32.650031,0] ***ov8825_truly_cm8313 lens reg:0x5802,0xd
+[   32.650618,0] ***ov8825_truly_cm8313 lens reg:0x5803,0xd
+[   32.651204,0] ***ov8825_truly_cm8313 lens reg:0x5804,0xf
+[   32.651794,0] ***ov8825_truly_cm8313 lens reg:0x5805,0x17
+[   32.652383,0] ***ov8825_truly_cm8313 lens reg:0x5806,0xa
+[   32.652953,0] ***ov8825_truly_cm8313 lens reg:0x5807,0x6
+[   32.653518,0] ***ov8825_truly_cm8313 lens reg:0x5808,0x4
+[   32.654134,0] ***ov8825_truly_cm8313 lens reg:0x5809,0x4
+[   32.654786,0] ***ov8825_truly_cm8313 lens reg:0x580a,0x7
+[   32.655419,0] ***ov8825_truly_cm8313 lens reg:0x580b,0xb
+[   32.656044,0] ***ov8825_truly_cm8313 lens reg:0x580c,0x7
+[   32.656688,0] ***ov8825_truly_cm8313 lens reg:0x580d,0x2
+[   32.657333,0] ***ov8825_truly_cm8313 lens reg:0x580e,0x0
+[   32.657973,0] ***ov8825_truly_cm8313 lens reg:0x580f,0x0
+[   32.658638,0] ***ov8825_truly_cm8313 lens reg:0x5810,0x3
+[   32.659301,0] ***ov8825_truly_cm8313 lens reg:0x5811,0x8
+[   32.659934,0] ***ov8825_truly_cm8313 lens reg:0x5812,0x7
+[   32.660586,0] ***ov8825_truly_cm8313 lens reg:0x5813,0x2
+[   32.661254,0] ***ov8825_truly_cm8313 lens reg:0x5814,0x0
+[   32.661898,0] ***ov8825_truly_cm8313 lens reg:0x5815,0x0
+[   32.662561,0] ***ov8825_truly_cm8313 lens reg:0x5816,0x3
+[   32.663221,0] ***ov8825_truly_cm8313 lens reg:0x5817,0x9
+[   32.663874,0] ***ov8825_truly_cm8313 lens reg:0x5818,0xc
+[   32.664518,0] ***ov8825_truly_cm8313 lens reg:0x5819,0x7
+[   32.665169,0] ***ov8825_truly_cm8313 lens reg:0x581a,0x5
+[   32.665816,0] ***ov8825_truly_cm8313 lens reg:0x581b,0x5
+[   32.666479,0] ***ov8825_truly_cm8313 lens reg:0x581c,0x8
+[   32.667129,0] ***ov8825_truly_cm8313 lens reg:0x581d,0xd
+[   32.667769,0] ***ov8825_truly_cm8313 lens reg:0x581e,0x16
+[   32.668414,0] ***ov8825_truly_cm8313 lens reg:0x581f,0x10
+[   32.669053,0] ***ov8825_truly_cm8313 lens reg:0x5820,0xf
+[   32.669696,0] ***ov8825_truly_cm8313 lens reg:0x5821,0xf
+[   32.670331,0] ***ov8825_truly_cm8313 lens reg:0x5822,0x13
+[   32.670946,0] ***ov8825_truly_cm8313 lens reg:0x5823,0x1a
+[   32.671574,0] ***ov8825_truly_cm8313 lens reg:0x5824,0x46
+[   32.672213,0] ***ov8825_truly_cm8313 lens reg:0x5825,0x20
+[   32.672831,0] ***ov8825_truly_cm8313 lens reg:0x5826,0x20
+[   32.673964,0] ***ov8825_truly_cm8313 lens reg:0x5827,0x20
+[   32.674664,0] ***ov8825_truly_cm8313 lens reg:0x5828,0x46
+[   32.677814,0] ***ov8825_truly_cm8313 lens reg:0x5829,0x2
+[   32.678528,0] ***ov8825_truly_cm8313 lens reg:0x582a,0x40
+[   32.679204,0] ***ov8825_truly_cm8313 lens reg:0x582b,0x40
+[   32.679871,0] ***ov8825_truly_cm8313 lens reg:0x582c,0x40
+[   32.680524,0] ***ov8825_truly_cm8313 lens reg:0x582d,0x2
+[   32.681218,0] ***ov8825_truly_cm8313 lens reg:0x582e,0x20
+[   32.681873,0] ***ov8825_truly_cm8313 lens reg:0x582f,0x42
+[   32.682609,0] ***ov8825_truly_cm8313 lens reg:0x5830,0x62
+[   32.683256,0] ***ov8825_truly_cm8313 lens reg:0x5831,0x62
+[   32.683881,0] ***ov8825_truly_cm8313 lens reg:0x5832,0x20
+[   32.684513,0] ***ov8825_truly_cm8313 lens reg:0x5833,0x22
+[   32.685143,0] ***ov8825_truly_cm8313 lens reg:0x5834,0x42
+[   32.685779,0] ***ov8825_truly_cm8313 lens reg:0x5835,0x42
+[   32.686399,0] ***ov8825_truly_cm8313 lens reg:0x5836,0x42
+[   32.687013,0] ***ov8825_truly_cm8313 lens reg:0x5837,0x22
+[   32.687629,0] ***ov8825_truly_cm8313 lens reg:0x5838,0x44
+[   32.688239,0] ***ov8825_truly_cm8313 lens reg:0x5839,0x22
+[   32.688849,0] ***ov8825_truly_cm8313 lens reg:0x583a,0x20
+[   32.689468,0] ***ov8825_truly_cm8313 lens reg:0x583b,0x42
+[   32.690129,0] ***ov8825_truly_cm8313 lens reg:0x583c,0x44
+[   32.690768,0] ***ov8825_truly_cm8313 lens reg:0x583d,0xae
+[   32.726681,1] msm_enqueue: queue control new max is 1
+[   32.784554,0] call_led_set_state : All LED flash probed failed or didn't register led_set_state after probe.
+[   32.866339,1] init: Warning!  Service geomagneticd needs a SELinux domain defined; please fix!
+[   32.866423,1] init: Starting service 'geomagneticd'...
+[   32.878863,1] init: Service 'geomagneticd' (pid 1396) exited with status 1
+[   32.879026,1] init: Service 'geomagneticd' (pid 1396) killing any children in process group
+[   32.940548,1] call_led_set_state : All LED flash probed failed or didn't register led_set_state after probe.
+[   32.971893,1] [adsp.c:msm_adsp_disable] disable 'QCAMTASK'
+[   32.974098,0] [adsp.c:msm_adsp_disable] disable 'VFETASK'
+[   32.976851,0] [adsp.c:msm_adsp_put] closing module QCAMTASK
+[   32.976971,0] [adsp.c:msm_adsp_put] closing module VFETASK
+[   32.979404,0] ov8825_truly_cm8313_sensor_power_down IN
+[   33.074056,0] msm_release_ion_client Calling ion_client_destroy
+[   33.078138,0] msm_mctl_register_subdevs:552:Gemini: Failure: goto out
+[   33.185049,0] csi_src_clk get failed
+[   33.208614,0] [adsp.c:msm_adsp_get] opening module QCAMTASK
+[   33.209478,0] [adsp.c:msm_adsp_get] opening module VFETASK
+[   33.210436,0] [adsp.c:msm_adsp_enable] enable 'QCAMTASK'state[0] id[17227151]
+[   33.214573,0] [adsp.c:handle_adsp_rtos_mtoa_app] module QCAMTASK: READY
+[   33.214801,0] [adsp.c:msm_adsp_enable] enable 'VFETASK'state[0] id[17227140]
+[   33.216706,0] [adsp.c:handle_adsp_rtos_mtoa_app] module VFETASK: READY
+[   33.216926,0] msm_enqueue: queue eventdata new max is 1
+[   33.234369,1] msm_enqueue: queue control new max is 1
+[   33.235953,0] mm-qcamera-daem: unhandled page fault (11) at 0x00000008, code 0x005
+[   33.236066,0] pgd = df0ac000
+[   33.236116,0] [00000008] *pgd=00000000
+[   33.236174,0] 
+[   33.236214,0] Pid: 1417, comm:      mm-qcamera-daem
+[   33.236286,0] CPU: 0    Tainted: G           O  (3.4.110-Chil360-MM-g80e5c78 #14)
+[   33.236389,0] PC is at 0xb6f268ac
+[   33.236444,0] LR is at 0xb6f2686b
+[   33.236508,0] pc : [<b6f268ac>]    lr : [<b6f2686b>]    psr: 800f0030
+[   33.236548,0] sp : b6bfdef0  ip : b7a3b808  fp : 00000002
+[   33.236668,0] r10: 00000003  r9 : 00000000  r8 : b7a29008
+[   33.236749,0] r7 : b7a3b808  r6 : 00000000  r5 : b6f26861  r4 : b6bfdf14
+[   33.236981,0] r3 : 00000000  r2 : 00000000  r1 : b6bfdf20  r0 : b7a18460
+[   33.237084,0] Flags: Nzcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+[   33.237198,0] Control: 10c5387d  Table: 1f2ac04a  DAC: 00000015
+[   33.237331,0] [<c0015c6c>] (unwind_backtrace+0x0/0x11c) from [<c06746f4>] (dump_stack+0x18/0x1c)
+[   33.237486,0] [<c06746f4>] (dump_stack+0x18/0x1c) from [<c000ffa8>] (show_regs+0x44/0x50)
+[   33.237626,0] [<c000ffa8>] (show_regs+0x44/0x50) from [<c001c260>] (__do_user_fault+0xd4/0x150)
+[   33.237771,0] [<c001c260>] (__do_user_fault+0xd4/0x150) from [<c06807e8>] (do_page_fault+0x370/0x3dc)
+[   33.238054,0] [<c06807e8>] (do_page_fault+0x370/0x3dc) from [<c0680878>] (do_translation_fault+0x24/0xe0)
+[   33.238341,0] [<c0680878>] (do_translation_fault+0x24/0xe0) from [<c0008418>] (do_DataAbort+0x3c/0xa0)
+[   33.238499,0] [<c0008418>] (do_DataAbort+0x3c/0xa0) from [<c067ee58>] (__dabt_usr+0x38/0x40)
+[   33.238613,0] Exception stack(0xd66f9fb0 to 0xd66f9ff8)
+[   33.238698,0] 9fa0:                                     b7a18460 b6bfdf20 00000000 00000000
+[   33.238824,0] 9fc0: b6bfdf14 b6f26861 00000000 b7a3b808 b7a29008 00000000 00000003 00000002
+[   33.238953,0] 9fe0: b7a3b808 b6bfdef0 b6f2686b b6f268ac 800f0030 ffffffff
+[   33.291711,0] mm-qcamera-daem: unhandled page fault (11) at 0x00000008, code 0x005
+[   33.291839,0] pgd = df0ac000
+[   33.291893,0] [00000008] *pgd=00000000
+[   33.291953,0] 
+[   33.291993,0] Pid: 1417, comm:      mm-qcamera-daem
+[   33.292066,0] CPU: 0    Tainted: G           O  (3.4.110-Chil360-MM-g80e5c78 #14)
+[   33.292169,0] PC is at 0xb6f268ac
+[   33.292241,0] LR is at 0xb6f2686b
+[   33.292306,0] pc : [<b6f268ac>]    lr : [<b6f2686b>]    psr: 800f0030
+[   33.292339,0] sp : b6bfdef0  ip : b7a3b808  fp : 00000002
+[   33.292461,0] r10: 00000003  r9 : 00000000  r8 : b7a29008
+[   33.292541,0] r7 : b7a3b808  r6 : 00000000  r5 : b6f26861  r4 : b6bfdf14
+[   33.292628,0] r3 : 00000000  r2 : 00000000  r1 : b6bfdf20  r0 : b7a18460
+[   33.292718,0] Flags: Nzcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+[   33.292821,0] Control: 10c5387d  Table: 1f2ac04a  DAC: 00000015
+[   33.292943,0] [<c0015c6c>] (unwind_backtrace+0x0/0x11c) from [<c06746f4>] (dump_stack+0x18/0x1c)
+[   33.293094,0] [<c06746f4>] (dump_stack+0x18/0x1c) from [<c000ffa8>] (show_regs+0x44/0x50)
+[   33.293246,0] [<c000ffa8>] (show_regs+0x44/0x50) from [<c001c260>] (__do_user_fault+0xd4/0x150)
+[   33.293386,0] [<c001c260>] (__do_user_fault+0xd4/0x150) from [<c06807e8>] (do_page_fault+0x370/0x3dc)
+[   33.293526,0] [<c06807e8>] (do_page_fault+0x370/0x3dc) from [<c0680878>] (do_translation_fault+0x24/0xe0)
+[   33.293666,0] [<c0680878>] (do_translation_fault+0x24/0xe0) from [<c0008418>] (do_DataAbort+0x3c/0xa0)
+[   33.293894,0] [<c0008418>] (do_DataAbort+0x3c/0xa0) from [<c067ee58>] (__dabt_usr+0x38/0x40)
+[   33.294019,0] Exception stack(0xd66f9fb0 to 0xd66f9ff8)
+[   33.294103,0] 9fa0:                                     b7a18460 b6bfdf20 00000000 00000000
+[   33.294226,0] 9fc0: b6bfdf14 b6f26861 00000000 b7a3b808 b7a29008 00000000 00000003 00000002
+[   33.294344,0] 9fe0: b7a3b808 b6bfdef0 b6f2686b b6f268ac 800f0030 ffffffff
+[   33.848888,0] mm-qcamera-daem: unhandled page fault (11) at 0x00000008, code 0x005
+[   33.849103,0] pgd = df0ac000
+[   33.849176,0] [00000008] *pgd=00000000
+[   33.849268,0] 
+[   33.849316,0] Pid: 1417, comm:      mm-qcamera-daem
+[   33.849426,0] CPU: 0    Tainted: G           O  (3.4.110-Chil360-MM-g80e5c78 #14)
+[   33.849544,0] PC is at 0xb6f268ac
+[   33.849613,0] LR is at 0xb6f2686b
+[   33.849689,0] pc : [<b6f268ac>]    lr : [<b6f2686b>]    psr: 800f0030
+[   33.849754,0] sp : b6bfdef0  ip : b7a3b808  fp : 00000002
+[   33.849896,0] r10: 00000003  r9 : 00000000  r8 : b7a29008
+[   33.850011,0] r7 : b7a3b808  r6 : 00000000  r5 : b6f26861  r4 : b6bfdf14
+[   33.850163,0] r3 : 00000000  r2 : 00000000  r1 : b6bfdf20  r0 : b7a18460
+[   33.850263,0] Flags: Nzcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+[   33.850403,0] Control: 10c5387d  Table: 1f2ac04a  DAC: 00000015
+[   33.850589,0] [<c0015c6c>] (unwind_backtrace+0x0/0x11c) from [<c06746f4>] (dump_stack+0x18/0x1c)
+[   33.850793,0] [<c06746f4>] (dump_stack+0x18/0x1c) from [<c000ffa8>] (show_regs+0x44/0x50)
+[   33.850979,0] [<c000ffa8>] (show_regs+0x44/0x50) from [<c001c260>] (__do_user_fault+0xd4/0x150)
+[   33.851149,0] [<c001c260>] (__do_user_fault+0xd4/0x150) from [<c06807e8>] (do_page_fault+0x370/0x3dc)
+[   33.851363,0] [<c06807e8>] (do_page_fault+0x370/0x3dc) from [<c0680878>] (do_translation_fault+0x24/0xe0)
+[   33.851563,0] [<c0680878>] (do_translation_fault+0x24/0xe0) from [<c0008418>] (do_DataAbort+0x3c/0xa0)
+[   33.851731,0] [<c0008418>] (do_DataAbort+0x3c/0xa0) from [<c067ee58>] (__dabt_usr+0x38/0x40)
+[   33.851858,0] Exception stack(0xd66f9fb0 to 0xd66f9ff8)
+[   33.851993,0] 9fa0:                                     b7a18460 b6bfdf20 00000000 00000000
+[   33.852154,0] 9fc0: b6bfdf14 b6f26861 00000000 b7a3b808 b7a29008 00000000 00000003 00000002
+[   33.852324,0] 9fe0: b7a3b808 b6bfdef0 b6f2686b b6f268ac 800f0030 ffffffff
+[   33.854828,0] msm_cam_stop_hardware: stopping hardware upon error
+[   34.050251,0] [adsp.c:msm_adsp_disable] disable 'QCAMTASK'
+[   34.051353,0] [adsp.c:msm_adsp_disable] disable 'VFETASK'
+[   34.053229,0] [adsp.c:msm_adsp_put] closing module QCAMTASK
+[   34.053338,0] [adsp.c:msm_adsp_put] closing module VFETASK
+[   34.075379,1] init: Service 'qcamerasvr' (pid 614) killed by signal 11
+[   34.075518,1] init: Service 'qcamerasvr' (pid 614) killing any children in process group
+[   34.077493,1] init: Warning!  Service qcamerasvr needs a SELinux domain defined; please fix!
+[   34.077609,1] init: Starting service 'qcamerasvr'...
+[   34.233938,0] msm_server_control: wait_event error -110
+[   34.234199,0] msm_release_ion_client Calling ion_client_destroy
